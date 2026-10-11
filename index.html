@@ -25,9 +25,7 @@
       <header class="topbar">
         <p class="brand">Semaine liturgique</p>
         <div class="topbar-actions">
-          <button class="pill-btn" id="open-calendar" type="button" aria-haspopup="dialog">
-            <span id="calendar-name">Philippines</span>
-          </button>
+          <button class="pill-btn today-btn" id="today" type="button">Aujourd’hui</button>
           <button class="icon-btn" id="open-settings" type="button" aria-haspopup="dialog" aria-label="Réglages">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8" /><circle cx="16" cy="7" r="2" /><circle cx="10" cy="17" r="2" /></svg>
           </button>
@@ -51,7 +49,6 @@
       </section>
 
       <nav class="strip" id="strip" aria-label="Jours de la semaine"></nav>
-      <button class="back-today" id="today" type="button" hidden>Revenir à aujourd’hui</button>
 
       <main class="layout" id="content">
         <div class="col-main">

@@ -224,6 +224,10 @@ svg { display: block; }
   stroke-linejoin: round;
 }
 .icon-btn:active, .pill-btn:active { transform: scale(0.96); }
+.today-btn { transition: opacity 0.2s, background 0.2s, color 0.2s; }
+.today-btn:not(:disabled) { background: var(--selected-bg); color: var(--selected-ink); border-color: var(--selected-bg); }
+.today-btn:disabled { opacity: 0.45; cursor: default; box-shadow: none; }
+.today-btn:disabled:active { transform: none; }
 
 /* ═══════════════════════════════════════════
    En-tête de semaine
@@ -276,16 +280,6 @@ svg { display: block; }
 .strip-day.is-selected { background: var(--selected-bg); color: var(--selected-ink); border-color: var(--selected-bg); }
 .strip-day.is-selected .strip-letter { color: inherit; opacity: 0.65; }
 
-.back-today {
-  display: block;
-  margin: 10px auto 0;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--muted);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.back-today[hidden] { display: none; }
 
 /* Pastille de couleur */
 .dot {
@@ -442,7 +436,7 @@ svg { display: block; }
   grid-template-columns: 2.6rem 1fr auto;
   align-items: center;
   gap: 14px;
-  padding: 12px 16px 12px 12px;
+  padding: 12px 16px;
   border-radius: var(--radius-md);
   background: var(--surface-soft);
   border: 1px solid transparent;
@@ -549,7 +543,6 @@ svg { display: block; }
   .week-title h1 { font-size: 2.8rem; }
   [data-style='missel'] .week-title h1 { font-size: 3.1rem; }
   .strip { max-width: 640px; }
-  .back-today { margin-left: 0; }
   .layout { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 40px; align-items: start; margin-top: 28px; }
   .col-main { position: sticky; top: 24px; }
   .hero { padding: 30px; min-height: 340px; }
@@ -633,3 +626,69 @@ svg { display: block; }
 .segmented span { display: block; text-align: center; padding: 8px 4px; border-radius: var(--pill); font-size: 0.86rem; font-weight: 550; color: var(--muted); cursor: pointer; }
 .segmented input:checked + span { background: var(--selected-bg); color: var(--selected-ink); }
 .segmented input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ═══════════════════════════════════════════
+   Liste de la semaine : hiérarchie des rangs
+   férie < mémoire < dimanche < fête < solennité
+   ═══════════════════════════════════════════ */
+
+/* Couleur du texte posé sur un aplat liturgique */
+[data-color] { --on-lit: #fff; }
+[data-color='WHITE'], [data-color='GOLD'], [data-color='ROSE'] { --on-lit: #141210; }
+
+/* Mémoire : bandeau de couleur à gauche + nom en gras */
+.week-list .row.rank-memorial {
+  position: relative;
+  overflow: hidden;
+  padding-left: 16px;
+}
+.week-list .row.rank-memorial::before,
+.week-list .row.rank-feast::before,
+.week-list .row.is-major.rank-weekday::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: var(--lit-edge);
+}
+.week-list .row.rank-memorial .row-name { font-weight: 650; }
+
+/* Dimanche : liseré et nom appuyé */
+.week-list .row.rank-sunday { border-color: var(--line-strong); }
+.week-list .row.rank-sunday .row-name { font-weight: 700; }
+
+/* Fête (et grands jours : Cendres, Triduum) : carte teintée de sa couleur */
+.week-list .row.rank-feast,
+.week-list .row.is-major.rank-weekday {
+  position: relative;
+  overflow: hidden;
+  padding-left: 16px;
+  background: color-mix(in srgb, var(--lit-glow) 16%, var(--surface));
+  border-color: color-mix(in srgb, var(--lit-glow) 40%, transparent);
+}
+.week-list .row.rank-feast .row-meta,
+.week-list .row.is-major.rank-weekday .row-meta { color: color-mix(in srgb, var(--lit-edge) 70%, var(--ink)); font-weight: 600; }
+
+/* Solennité : aplat plein de la couleur liturgique */
+.week-list .row.rank-solemnity {
+  background: var(--lit);
+  border-color: var(--lit-edge);
+  color: var(--on-lit);
+}
+.week-list .row.rank-solemnity[data-color='WHITE'] {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--c-white-edge) 38%, var(--c-white)), var(--c-white));
+}
+.week-list .row.rank-solemnity .row-dow,
+.week-list .row.rank-solemnity .row-meta { color: inherit; opacity: 0.8; }
+.week-list .row.rank-solemnity .row-name { color: inherit; }
+.week-list .row.rank-solemnity .dot { width: 14px; height: 14px; background: var(--lit); box-shadow: 0 0 0 2px color-mix(in srgb, var(--on-lit) 75%, transparent); }
+
+/* Missel : mêmes repères, version imprimée */
+[data-style='missel'] .week-list .row.rank-feast,
+[data-style='missel'] .week-list .row.is-major.rank-weekday { background: color-mix(in srgb, var(--lit-glow) 10%, transparent); border-color: var(--line); }
+[data-style='missel'] .week-list .row.rank-sunday { border-color: var(--line); }
+[data-style='missel'] .week-list .row.rank-solemnity { border-color: var(--line); }
+
+/* Jour sélectionné : contour net, quelle que soit la teinte */
+.week-list .row.is-selected { box-shadow: 0 0 0 2px var(--ink), var(--shadow); }
+[data-style='missel'] .week-list .row.is-selected { box-shadow: inset 3px 0 0 var(--ink); }

@@ -206,7 +206,7 @@ function renderList(days, today) {
     if (!isFeria(d)) meta.push(main.rankLabel);
     if (d.obligation) meta.push('Obligation');
     if (others.length) meta.push(others.map((o) => capitalize(splitObit(o.name).text).split(',')[0]).join(' · '));
-    const classes = ['row'];
+    const classes = ['row', `rank-${main.rank.toLowerCase().replace('_', '-')}`];
     if (d.major) classes.push('is-major');
     if (isFeria(d)) classes.push('is-feria');
     if (d.date === state.selected) classes.push('is-selected');
@@ -234,13 +234,12 @@ let renderToken = 0;
 async function render(direction = 0) {
   const token = ++renderToken;
   const today = todayIso();
-  $('calendar-name').textContent = CALENDAR_LABELS[state.calendar];
   $('footer-calendar').textContent = CALENDAR_LABELS[state.calendar];
   $('week-range').textContent = weekRangeLabel(state.weekStart);
 
   const weekDates = Array.from({ length: 7 }, (_, i) => addDays(state.weekStart, i));
   if (!weekDates.includes(state.selected)) state.selected = weekDates.includes(today) ? today : state.weekStart;
-  $('today').hidden = state.selected === today;
+  $('today').disabled = state.selected === today;
 
   try {
     const days = await loadWeek(state.calendar, state.weekStart);
@@ -274,7 +273,7 @@ function goWeeks(n) {
 
 function select(iso) {
   state.selected = iso;
-  $('today').hidden = iso === todayIso();
+  $('today').disabled = iso === todayIso();
   renderSelection();
 }
 
@@ -340,7 +339,6 @@ function openSettings(sectionId) {
   if (sectionId) $(sectionId).scrollIntoView({ block: 'start' });
 }
 
-$('open-calendar').addEventListener('click', () => openSettings('section-calendar'));
 $('open-settings').addEventListener('click', () => openSettings());
 settings.addEventListener('click', (e) => {
   if (e.target === settings) settings.close();
