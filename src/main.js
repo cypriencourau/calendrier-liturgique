@@ -2,6 +2,7 @@ import '@fontsource-variable/manrope';
 import '@fontsource-variable/fraunces';
 import '@fontsource-variable/inter-tight';
 import './style.css';
+import INTENTIONS from '../lib/intentions-pape.json';
 
 const CALENDAR_LABELS = { philippines: 'Philippines', france: 'France' };
 const COLOR_LABELS = { WHITE: 'Blanc', RED: 'Rouge', GREEN: 'Vert', PURPLE: 'Violet', ROSE: 'Rose', BLACK: 'Noir', GOLD: 'Or' };
@@ -21,6 +22,8 @@ const fmt = (opts) => new Intl.DateTimeFormat('fr-FR', { timeZone: 'UTC', ...opt
 const dowShortFmt = fmt({ weekday: 'short' });
 const dowLongFmt = fmt({ weekday: 'long' });
 const dayMonthFmt = fmt({ day: 'numeric', month: 'long' });
+const monthLongFmt = fmt({ month: 'long' });
+const MOON_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" /></svg>';
 
 const $ = (id) => document.getElementById(id);
 const state = {
@@ -181,7 +184,18 @@ function renderHero(day, today, hero = $('hero')) {
       <span class="swatches">${main.colors.map((c) => `<span class="swatch" data-color="${c}"></span>`).join('')}</span>
       <span><span class="hero-label">Couleur liturgique</span><strong>${escapeHtml(colorLabel(main.colors))}</strong></span>
     </div>
-    ${othersHtml}`;
+    ${othersHtml}
+    ${vespersHtml(day, today)}`;
+}
+
+// « Ce soir : 1res Vêpres de… » — l'oubli classique la veille des dimanches et solennités.
+function vespersHtml(day, today) {
+  if (!day.firstVespers) return '';
+  const when = day.date === today ? 'Ce soir' : 'Le soir';
+  return `<div class="hero-vespers">
+      <span class="vespers-icon">${MOON_ICON}</span>
+      <span><span class="hero-label">${when} · 1ʳᵉˢ Vêpres</span><strong>${escapeHtml(capitalize(splitObit(day.firstVespers.name).text))}</strong></span>
+    </div>`;
 }
 
 function renderKey(days) {
@@ -201,6 +215,19 @@ function renderKey(days) {
     }).join('')}</ul>`;
 }
 
+// Intention de prière du Pape pour le mois de la semaine affichée (celui du mercredi).
+function renderIntention(days) {
+  const date = toDate(days[3].date);
+  const key = days[3].date.slice(0, 7);
+  const intention = INTENTIONS[key];
+  $('intention').hidden = !intention;
+  if (!intention) return;
+  $('intention').innerHTML = `
+    <h2 class="section-title">Intention du Pape · ${escapeHtml(monthLongFmt.format(date))}</h2>
+    <p class="intention-title">${escapeHtml(intention.title)}</p>
+    <p class="intention-text">${escapeHtml(intention.text)}</p>`;
+}
+
 function renderList(days, today) {
   $('week-list').innerHTML = days.map((d) => {
     const [main, ...others] = d.celebrations;
@@ -209,6 +236,7 @@ function renderList(days, today) {
     if (!isFeria(d)) meta.push(main.rankLabel);
     if (d.obligation) meta.push('Obligation');
     if (others.length) meta.push(others.map((o) => capitalize(splitObit(o.name).text).split(',')[0]).join(' · '));
+    const solemnityEve = d.firstVespers?.rank === 'SOLEMNITY';
     const classes = ['row', `rank-${main.rank.toLowerCase().replace('_', '-')}`];
     if (d.major) classes.push('is-major');
     if (isFeria(d)) classes.push('is-feria');
@@ -219,6 +247,7 @@ function renderList(days, today) {
       <span class="row-body">
         <span class="row-name">${escapeHtml(listName(main, d))}</span>
         ${meta.length ? `<span class="row-meta">${escapeHtml(meta.join(' · '))}</span>` : ''}
+        ${solemnityEve ? `<span class="row-vespers">${MOON_ICON}1ʳᵉˢ Vêpres le soir</span>` : ''}
       </span>
       <span class="dot"></span>
     </button></li>`;
@@ -252,6 +281,7 @@ async function render(direction = 0) {
     $('season').textContent = seasonLine(days);
     $('cycles').textContent = cyclesLine(days[0]);
     renderKey(days);
+    renderIntention(days);
     renderSelection();
     if (direction) {
       const content = $('content');

@@ -13,6 +13,7 @@ import nodemailer from 'nodemailer';
 import { getDays, CALENDARS, COLOR_LABELS } from '../lib/liturgie.mjs';
 
 const config = JSON.parse(await readFile(new URL('../config.json', import.meta.url), 'utf8'));
+const INTENTIONS = JSON.parse(await readFile(new URL('../lib/intentions-pape.json', import.meta.url), 'utf8'));
 
 // Palette du style Lumière (mêmes jetons que l'app).
 const C = { bg: '#f3ecdc', surface: '#fffdf8', ink: '#141210', muted: '#6e675b', faint: '#a69e90', line: '#ebe4d3' };
@@ -34,6 +35,7 @@ const SEASON_WEEK = {
 const fmt = (opts) => new Intl.DateTimeFormat('fr-FR', { timeZone: 'UTC', ...opts });
 const dowFmt = fmt({ weekday: 'long' });
 const dayMonthFmt = fmt({ day: 'numeric', month: 'long' });
+const monthLongFmt = fmt({ month: 'long' });
 
 function ordinal(n) { return n === 1 ? '1ʳᵉ' : `${n}ᵉ`; }
 function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
@@ -186,9 +188,28 @@ function renderRow(d) {
         <td style="padding:12px;vertical-align:middle;">
           <div style="${nameStyle}line-height:1.3;">${escapeHtml(displayName(main, d))}</div>
           ${meta.length ? `<div style="font-size:12px;color:${C.muted};margin-top:2px;">${escapeHtml(meta.join(' · '))}</div>` : ''}
+          ${d.firstVespers?.rank === 'SOLEMNITY' ? `<div style="font-size:12px;font-weight:700;color:${C.ink};margin-top:3px;">☾ 1ʳᵉˢ Vêpres le soir : ${escapeHtml(stripObit(capitalize(d.firstVespers.name)))}</div>` : ''}
         </td>
         <td style="width:30px;padding:12px 16px 12px 0;text-align:right;vertical-align:middle;">${dot(main.colors[0], d.major ? 14 : 10)}</td>
       </tr>
+    </table>
+  </td></tr>`;
+}
+
+// Intention du Pape du mois qui couvre l'essentiel de la semaine (celui du jeudi).
+function intentionFor(days) {
+  const key = days[3].date.slice(0, 7);
+  return INTENTIONS[key] ? { ...INTENTIONS[key], month: monthLongFmt.format(toDate(days[3].date)) } : null;
+}
+
+function renderIntention(intention) {
+  return `<tr><td style="padding:12px 0 0;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:${C.surface};border-radius:22px;border:1px solid ${C.line};">
+      <tr><td style="padding:16px 18px;">
+        ${label(`Intention du Pape · ${intention.month}`)}
+        <div style="margin-top:8px;font-size:16px;font-weight:700;line-height:1.3;color:${C.ink};">${escapeHtml(intention.title)}</div>
+        <div style="margin-top:6px;font-size:14px;line-height:1.5;color:${C.muted};">${escapeHtml(intention.text)}</div>
+      </td></tr>
     </table>
   </td></tr>`;
 }
@@ -226,6 +247,7 @@ function renderHtml(days, appUrl) {
         ${showKey ? renderKey(keyDays) : ''}
         <tr><td style="padding:10px 4px;">${label('La semaine')}</td></tr>
         ${days.map(renderRow).join('')}
+        ${intentionFor(days) ? renderIntention(intentionFor(days)) : ''}
         ${link}
         <tr><td style="padding:22px 0 0;text-align:center;font-size:11px;color:${C.faint};">Forme ordinaire du rite romain · calendrier ${escapeHtml(CALENDARS[config.calendar].label)}</td></tr>
       </table>
@@ -248,7 +270,10 @@ function renderText(days, appUrl) {
     const rank = main.rank === 'WEEKDAY' && !d.major ? '' : `${main.rankLabel}, `;
     lines.push(`${capitalize(dowFmt.format(date))} ${dayMonthFmt.format(date)} — ${displayName(main, d)} (${rank}${colorLabel(main.colors).toLowerCase()})${d.obligation ? ' · obligation' : ''}`);
     for (const o of others) lines.push(`    ${stripObit(capitalize(o.name))} (${o.rankLabel.toLowerCase()})`);
+    if (d.firstVespers?.rank === 'SOLEMNITY') lines.push(`    Le soir : 1res Vêpres — ${stripObit(capitalize(d.firstVespers.name))}`);
   }
+  const intention = intentionFor(days);
+  if (intention) lines.push('', `INTENTION DU PAPE (${intention.month}) : ${intention.title}`, intention.text);
   if (appUrl) lines.push('', `App : ${appUrl}`);
   return lines.join('\n');
 }
