@@ -692,3 +692,67 @@ svg { display: block; }
 /* Jour sélectionné : contour net, quelle que soit la teinte */
 .week-list .row.is-selected { box-shadow: 0 0 0 2px var(--ink), var(--shadow); }
 [data-style='missel'] .week-list .row.is-selected { box-shadow: inset 3px 0 0 var(--ink); }
+
+/* ═══════════════════════════════════════════
+   Téléphone : la semaine d'abord
+   La liste vient sous le bandeau ; le détail
+   d'un jour s'ouvre dans une fiche en bas.
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 999px) {
+  .week-head { margin: 18px 0 14px; }
+  .layout { display: flex; flex-direction: column; gap: 18px; margin-top: 14px; }
+  .col-side { order: -1; }
+  .col-main > #hero { display: none; }
+  .col-side .section-title { display: none; }
+
+  .week-list { gap: 5px; }
+  .row { padding: 9px 14px; gap: 12px; min-height: 58px; }
+  .row-num { font-size: 1.1rem; }
+  .row-name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .row-meta {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+  }
+  .row.is-major .row-name { font-size: 1rem; }
+  /* Sur téléphone, la sélection n'a de sens que dans la fiche : on garde juste « aujourd'hui ». */
+  .week-list .row.is-selected:not(.is-today) { box-shadow: none; }
+  .week-list .row.is-today { box-shadow: 0 0 0 2px var(--ink); }
+  .strip-day.is-selected:not(.is-today) { background: var(--surface-soft); color: var(--ink); border-color: var(--line); }
+  .strip-day.is-selected:not(.is-today) .strip-letter { color: var(--muted); opacity: 1; }
+  .strip-day.is-today { background: var(--selected-bg); color: var(--selected-ink); border-color: var(--selected-bg); }
+  .strip-day.is-today .strip-letter { color: inherit; opacity: 0.65; }
+  [data-style='missel'] .strip-day.is-today { background: transparent; color: var(--ink); box-shadow: inset 0 -3px 0 var(--ink); }
+  [data-style='missel'] .strip-day.is-selected:not(.is-today) { box-shadow: none; }
+  [data-style='missel'] .week-list .row.is-today { box-shadow: inset 3px 0 0 var(--ink); }
+}
+
+/* Fiche du jour */
+.day-sheet {
+  width: 100%;
+  max-width: 560px;
+  max-height: 88dvh;
+  margin: auto auto 0;
+  padding: 10px 12px max(16px, env(safe-area-inset-bottom));
+  border: 0;
+  border-radius: 28px 28px 0 0;
+  background: var(--bg);
+  color: var(--ink);
+  overflow-y: auto;
+  box-shadow: 0 -20px 60px -20px rgb(0 0 0 / 35%);
+}
+[data-style='missel'] .day-sheet { border-radius: 0; border-top: 2px solid var(--ink); }
+.day-sheet[open] { animation: sheet-up 0.32s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.day-sheet::backdrop { background: rgb(15 12 8 / 40%); backdrop-filter: blur(2px); }
+@keyframes sheet-up { from { transform: translateY(40%); opacity: 0; } }
+.day-sheet-bar { display: flex; align-items: center; justify-content: space-between; padding: 2px 4px 12px; }
+.day-sheet-actions { display: flex; gap: 8px; }
+.day-sheet-handle { width: 40px; height: 5px; border-radius: 3px; background: var(--line-strong); }
+.day-sheet .hero { box-shadow: none; }
+[data-style='missel'] .day-sheet .hero { padding-inline: 6px; }
+@media (prefers-reduced-motion: reduce) {
+  .day-sheet[open] { animation: none; }
+}

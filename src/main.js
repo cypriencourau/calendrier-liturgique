@@ -65,6 +65,10 @@ function shortName(c, day) {
   }
   return capitalize(splitObit(c.name).text);
 }
+// Nom compact pour la liste : « Sainte Thérèse de Jésus (d’Avila), vierge… » → « Sainte Thérèse de Jésus (d’Avila) ».
+function listName(c, day) {
+  return shortName(c, day).replace(/\s*\(†[^)]*\)/g, '').split(',')[0];
+}
 function colorLabel(colors) { return colors.map((c) => COLOR_LABELS[c] ?? c).join(' ou '); }
 function isFeria(day) { return day.celebrations[0].rank === 'WEEKDAY' && !day.major; }
 function isKeyDay(day) { return day.major || (day.obligation && toDate(day.date).getUTCDay() !== 0); }
@@ -146,7 +150,7 @@ function othersLabel(others) {
   return others.length > 1 ? (PLURAL_LABELS[label] ?? label) : label;
 }
 
-function renderHero(day, today) {
+function renderHero(day, today, hero = $('hero')) {
   const [main, ...others] = day.celebrations;
   const date = toDate(day.date);
   const { obit } = splitObit(main.name);
@@ -163,7 +167,6 @@ function renderHero(day, today) {
       </div>`
     : '';
 
-  const hero = $('hero');
   hero.dataset.color = main.colors[0];
   hero.className = `hero${day.major ? ' is-major' : ''}${main.rank === 'SOLEMNITY' ? ' is-solemnity' : ''}`;
   hero.innerHTML = `
@@ -214,7 +217,7 @@ function renderList(days, today) {
     return `<li><button type="button" class="${classes.join(' ')}" data-date="${d.date}" data-color="${main.colors[0]}">
       <span class="row-date"><span class="row-dow">${escapeHtml(dowShortFmt.format(date).replace('.', ''))}</span><span class="row-num">${date.getUTCDate()}</span></span>
       <span class="row-body">
-        <span class="row-name">${escapeHtml(shortName(main, d))}</span>
+        <span class="row-name">${escapeHtml(listName(main, d))}</span>
         ${meta.length ? `<span class="row-meta">${escapeHtml(meta.join(' · '))}</span>` : ''}
       </span>
       <span class="dot"></span>
@@ -277,6 +280,54 @@ function select(iso) {
   renderSelection();
 }
 
+// ── Fiche du jour (téléphone) ───────────────
+const isPhone = () => window.matchMedia('(max-width: 999px)').matches;
+const daySheet = $('day-sheet');
+
+function renderSheet() {
+  const day = state.days.find((d) => d.date === state.selected);
+  if (day) renderHero(day, todayIso(), $('sheet-hero'));
+}
+
+function openDaySheet(iso) {
+  select(iso);
+  renderSheet();
+  if (!daySheet.open) daySheet.showModal();
+}
+
+// Jour précédent / suivant depuis la fiche, en changeant de semaine si besoin.
+async function shiftDay(n) {
+  const iso = addDays(state.selected, n);
+  if (sundayOf(iso) !== state.weekStart) {
+    state.weekStart = sundayOf(iso);
+    state.selected = iso;
+    await render(n);
+  } else {
+    select(iso);
+  }
+  renderSheet();
+}
+
+$('sheet-prev').addEventListener('click', () => shiftDay(-1));
+$('sheet-next').addEventListener('click', () => shiftDay(1));
+$('sheet-close').addEventListener('click', () => daySheet.close());
+daySheet.addEventListener('click', (e) => {
+  if (e.target === daySheet) daySheet.close();
+});
+// Glisser la fiche vers le bas pour la fermer, sur les côtés pour changer de jour.
+let sheetTouch = null;
+daySheet.addEventListener('touchstart', (e) => {
+  sheetTouch = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+}, { passive: true });
+daySheet.addEventListener('touchend', (e) => {
+  if (!sheetTouch) return;
+  const dx = e.changedTouches[0].clientX - sheetTouch.x;
+  const dy = e.changedTouches[0].clientY - sheetTouch.y;
+  sheetTouch = null;
+  if (dy > 90 && dy > Math.abs(dx)) daySheet.close();
+  else if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) shiftDay(dx < 0 ? 1 : -1);
+});
+
 // ── Interactions ────────────────────────────
 $('prev').addEventListener('click', () => goWeeks(-1));
 $('next').addEventListener('click', () => goWeeks(1));
@@ -292,10 +343,8 @@ for (const id of ['strip', 'week-list', 'key']) {
   $(id).addEventListener('click', (e) => {
     const btn = e.target.closest('[data-date]');
     if (!btn) return;
-    select(btn.dataset.date);
-    if (id !== 'strip' && window.matchMedia('(max-width: 999px)').matches) {
-      $('hero').scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+    if (isPhone()) openDaySheet(btn.dataset.date);
+    else select(btn.dataset.date);
   });
 }
 document.addEventListener('keydown', (e) => {

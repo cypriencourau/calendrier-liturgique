@@ -64,6 +64,24 @@
       <footer class="footer">Forme ordinaire du rite romain · calendrier <span id="footer-calendar">Philippines</span></footer>
     </div>
 
+    <dialog class="day-sheet" id="day-sheet" aria-label="Détail du jour">
+      <div class="day-sheet-bar">
+        <button class="icon-btn" id="sheet-prev" type="button" aria-label="Jour précédent">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6 8.5 12l6 6" /></svg>
+        </button>
+        <span class="day-sheet-handle" aria-hidden="true"></span>
+        <div class="day-sheet-actions">
+          <button class="icon-btn" id="sheet-next" type="button" aria-label="Jour suivant">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 6 6 6-6 6" /></svg>
+          </button>
+          <button class="icon-btn" id="sheet-close" type="button" aria-label="Fermer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+          </button>
+        </div>
+      </div>
+      <article class="hero" id="sheet-hero" aria-live="polite"></article>
+    </dialog>
+
     <dialog class="sheet" id="settings">
       <form method="dialog">
         <div class="sheet-head">
