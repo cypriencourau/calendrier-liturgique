@@ -1,130 +1,124 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-style="lumiere">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Semaine liturgique</title>
     <meta name="description" content="La semaine liturgique d'un coup d'œil : fêtes, saints et couleurs." />
-    <meta name="theme-color" content="#f7f3ec" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#15130f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f3ecdc" />
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Liturgie" />
     <script>
-      // Applique l'apparence choisie avant l'affichage (évite un flash).
+      // Applique le style choisi avant l'affichage (évite un flash).
       try {
         const prefs = JSON.parse(localStorage.getItem('appearance') || '{}');
-        for (const [k, v] of Object.entries(prefs)) document.documentElement.dataset[k] = v;
+        if (prefs.style) document.documentElement.dataset.style = prefs.style;
+        if (prefs.size) document.documentElement.dataset.size = prefs.size;
       } catch {}
     </script>
   </head>
   <body>
     <div class="app">
       <header class="topbar">
-        <h1 class="brand">Semaine liturgique</h1>
+        <p class="brand">Semaine liturgique</p>
         <div class="topbar-actions">
-          <button class="calendar-pill" id="open-settings" type="button" aria-haspopup="dialog">
+          <button class="pill-btn" id="open-calendar" type="button" aria-haspopup="dialog">
             <span id="calendar-name">Philippines</span>
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
-          <button class="gear-btn" id="open-appearance" type="button" aria-haspopup="dialog" aria-label="Réglages et apparence">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M19.4 13.5a7.6 7.6 0 0 0 0-3l2-1.6-2-3.4-2.4 1a7.6 7.6 0 0 0-2.6-1.5L14 2.5h-4l-.4 2.5A7.6 7.6 0 0 0 7 6.5l-2.4-1-2 3.4 2 1.6a7.6 7.6 0 0 0 0 3l-2 1.6 2 3.4 2.4-1a7.6 7.6 0 0 0 2.6 1.5l.4 2.5h4l.4-2.5a7.6 7.6 0 0 0 2.6-1.5l2.4 1 2-3.4-2-1.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <button class="icon-btn" id="open-settings" type="button" aria-haspopup="dialog" aria-label="Réglages">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8" /><circle cx="16" cy="7" r="2" /><circle cx="10" cy="17" r="2" /></svg>
           </button>
         </div>
       </header>
 
-      <nav class="week-nav" aria-label="Changer de semaine">
-        <button class="nav-btn" id="prev" type="button" aria-label="Semaine précédente">
-          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5L7 10l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+      <section class="week-head">
         <div class="week-title">
-          <h2 id="week-range"></h2>
-          <button class="today-btn" id="today" type="button" hidden>Revenir à cette semaine</button>
+          <h1 id="week-range"></h1>
+          <p class="season" id="season"></p>
+          <p class="cycles" id="cycles"></p>
         </div>
-        <button class="nav-btn" id="next" type="button" aria-label="Semaine suivante">
-          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4.5L13 10l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </nav>
+        <div class="week-nav">
+          <button class="icon-btn" id="prev" type="button" aria-label="Semaine précédente">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6 8.5 12l6 6" /></svg>
+          </button>
+          <button class="icon-btn" id="next" type="button" aria-label="Semaine suivante">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 6 6 6-6 6" /></svg>
+          </button>
+        </div>
+      </section>
 
-      <section class="summary" id="summary" aria-live="polite"></section>
+      <nav class="strip" id="strip" aria-label="Jours de la semaine"></nav>
+      <button class="back-today" id="today" type="button" hidden>Revenir à aujourd’hui</button>
 
-      <main class="days" id="days"></main>
+      <main class="layout" id="content">
+        <div class="col-main">
+          <article class="hero" id="hero" aria-live="polite"></article>
+          <section class="key" id="key"></section>
+        </div>
+        <section class="col-side">
+          <h2 class="section-title">La semaine</h2>
+          <ol class="week-list" id="week-list"></ol>
+        </section>
+      </main>
 
-      <footer class="footer">
-        Forme ordinaire du rite romain · calendrier <span id="footer-calendar">Philippines</span>
-      </footer>
+      <footer class="footer">Forme ordinaire du rite romain · calendrier <span id="footer-calendar">Philippines</span></footer>
     </div>
 
     <dialog class="sheet" id="settings">
       <form method="dialog">
+        <div class="sheet-head">
+          <h2>Réglages</h2>
+          <button class="icon-btn" value="close" aria-label="Fermer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+          </button>
+        </div>
+
         <section class="sheet-section" id="section-calendar">
-          <h2>Calendrier</h2>
-          <p class="sheet-hint">Les fêtes propres et les jours d'obligation dépendent du pays.</p>
-          <label class="choice">
-            <input type="radio" name="calendar" value="philippines" />
-            <span><strong>Philippines</strong><small>Santo Niño, saints philippins, Ascension le dimanche</small></span>
-          </label>
-          <label class="choice">
-            <input type="radio" name="calendar" value="france" />
-            <span><strong>France</strong><small>Saints de France, Ascension le jeudi</small></span>
-          </label>
+          <h3>Calendrier</h3>
+          <div class="options two">
+            <label class="option">
+              <input type="radio" name="calendar" value="philippines" />
+              <span class="option-body"><strong>Philippines</strong><small>Santo Niño, saints philippins</small></span>
+            </label>
+            <label class="option">
+              <input type="radio" name="calendar" value="france" />
+              <span class="option-body"><strong>France</strong><small>Saints de France, Ascension le jeudi</small></span>
+            </label>
+          </div>
         </section>
 
-        <section class="sheet-section" id="section-appearance">
-          <h2>Apparence</h2>
-
-          <fieldset class="setting">
-            <legend>Thème</legend>
-            <div class="segmented">
-              <label><input type="radio" name="theme" value="" /><span>Auto</span></label>
-              <label><input type="radio" name="theme" value="light" /><span>Clair</span></label>
-              <label><input type="radio" name="theme" value="dark" /><span>Sombre</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="setting">
-            <legend>Couleur principale</legend>
-            <div class="accents">
-              <label title="Bordeaux"><input type="radio" name="accent" value="" aria-label="Bordeaux" /><span style="--chip:#7a1f2b"></span></label>
-              <label title="Bleu marial"><input type="radio" name="accent" value="marial" aria-label="Bleu marial" /><span style="--chip:#1f4e8c"></span></label>
-              <label title="Vert"><input type="radio" name="accent" value="vert" aria-label="Vert" /><span style="--chip:#2e6b46"></span></label>
-              <label title="Violet"><input type="radio" name="accent" value="violet" aria-label="Violet" /><span style="--chip:#5b3a8c"></span></label>
-              <label title="Or"><input type="radio" name="accent" value="or" aria-label="Or" /><span style="--chip:#8a6a1c"></span></label>
-              <label title="Encre"><input type="radio" name="accent" value="encre" aria-label="Encre" /><span style="--chip:#1f1b16"></span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="setting">
-            <legend>Taille du texte</legend>
-            <div class="segmented">
-              <label><input type="radio" name="size" value="petit" /><span style="font-size:0.8rem">Petit</span></label>
-              <label><input type="radio" name="size" value="" /><span>Normal</span></label>
-              <label><input type="radio" name="size" value="grand" /><span style="font-size:1rem">Grand</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="setting">
-            <legend>Police des titres</legend>
-            <div class="segmented">
-              <label><input type="radio" name="font" value="" /><span class="preview-font-serif">Classique</span></label>
-              <label><input type="radio" name="font" value="moderne" /><span>Moderne</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="setting">
-            <legend>Densité</legend>
-            <div class="segmented">
-              <label><input type="radio" name="density" value="" /><span>Aérée</span></label>
-              <label><input type="radio" name="density" value="compacte" /><span>Compacte</span></label>
-            </div>
-          </fieldset>
-
-          <button class="reset-btn" id="reset-appearance" type="button">Revenir à l’apparence par défaut</button>
+        <section class="sheet-section" id="section-style">
+          <h3>Style</h3>
+          <div class="options three">
+            <label class="option style-option">
+              <input type="radio" name="style" value="lumiere" />
+              <span class="style-preview preview-lumiere" aria-hidden="true"><i></i><b></b><b></b></span>
+              <span class="option-body"><strong>Lumière</strong><small>Doux et lumineux</small></span>
+            </label>
+            <label class="option style-option">
+              <input type="radio" name="style" value="missel" />
+              <span class="style-preview preview-missel" aria-hidden="true"><i></i><b></b><b></b></span>
+              <span class="option-body"><strong>Missel</strong><small>Éditorial, sobre</small></span>
+            </label>
+            <label class="option style-option">
+              <input type="radio" name="style" value="nuit" />
+              <span class="style-preview preview-nuit" aria-hidden="true"><i></i><b></b><b></b></span>
+              <span class="option-body"><strong>Nuit</strong><small>Sombre, minimal</small></span>
+            </label>
+          </div>
         </section>
 
-        <button class="sheet-close" value="ok">Fermer</button>
+        <section class="sheet-section">
+          <h3>Taille du texte</h3>
+          <div class="segmented">
+            <label><input type="radio" name="size" value="petit" /><span>Petite</span></label>
+            <label><input type="radio" name="size" value="" /><span>Normale</span></label>
+            <label><input type="radio" name="size" value="grand" /><span>Grande</span></label>
+          </div>
+        </section>
       </form>
     </dialog>
 

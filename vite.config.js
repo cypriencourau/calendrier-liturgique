@@ -25,9 +25,14 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        // Les données de chaque année sont mises en cache à la première consultation.
+        globPatterns: ['**/*.{js,css,html,svg,png}'],
+        // Polices et données de chaque année : mises en cache à la première utilisation.
         runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.endsWith('.woff2'),
+            handler: 'CacheFirst',
+            options: { cacheName: 'liturgie-fonts', expiration: { maxEntries: 30 } },
+          },
           {
             urlPattern: ({ url }) => url.pathname.includes('/data/'),
             handler: 'StaleWhileRevalidate',

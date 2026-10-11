@@ -1,66 +1,80 @@
-import '@fontsource/eb-garamond/500.css';
-import '@fontsource/eb-garamond/600.css';
+import '@fontsource-variable/manrope';
+import '@fontsource-variable/fraunces';
+import '@fontsource-variable/inter-tight';
 import './style.css';
 
 const CALENDAR_LABELS = { philippines: 'Philippines', france: 'France' };
 const COLOR_LABELS = { WHITE: 'Blanc', RED: 'Rouge', GREEN: 'Vert', PURPLE: 'Violet', ROSE: 'Rose', BLACK: 'Noir', GOLD: 'Or' };
+const THEME_COLORS = { lumiere: '#f3ecdc', missel: '#f7f4ed', nuit: '#0b0b0c' };
 const ROMAN = { WEEK_1: 'I', WEEK_2: 'II', WEEK_3: 'III', WEEK_4: 'IV' };
+const DAY_LETTERS = ['D', 'L', 'M', 'M', 'J', 'V', 'S'];
 const SEASON_WEEK = {
   ADVENT: (n) => `${ordinal(n)} semaine de l’Avent`,
   LENT: (n) => (n === 6 ? 'Semaine sainte' : `${ordinal(n)} semaine de Carême`),
   EASTER_TIME: (n) => (n === 1 ? 'Octave de Pâques' : `${ordinal(n)} semaine de Pâques`),
   ORDINARY_TIME: (n) => `${ordinal(n)} semaine du Temps ordinaire`,
 };
+// « lundi de la vingt-huitième semaine du Temps Ordinaire » → « Férie » : la semaine est déjà en en-tête.
+const FERIA_SUFFIX = { ORDINARY_TIME: '', ADVENT: ' de l’Avent', LENT: ' de Carême', EASTER_TIME: ' du Temps pascal' };
 
-const dayFmt = new Intl.DateTimeFormat('fr-FR', { weekday: 'short', timeZone: 'UTC' });
-const longDayFmt = new Intl.DateTimeFormat('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' });
-const monthFmt = new Intl.DateTimeFormat('fr-FR', { month: 'short', timeZone: 'UTC' });
+const fmt = (opts) => new Intl.DateTimeFormat('fr-FR', { timeZone: 'UTC', ...opts });
+const dowShortFmt = fmt({ weekday: 'short' });
+const dowLongFmt = fmt({ weekday: 'long' });
+const dayMonthFmt = fmt({ day: 'numeric', month: 'long' });
 
 const $ = (id) => document.getElementById(id);
 const state = {
   calendar: readStorage('calendar') ?? 'philippines',
   weekStart: sundayOf(todayIso()),
+  selected: todayIso(),
+  days: [],
 };
 const yearCache = new Map();
 
+// ── Utilitaires ─────────────────────────────
 function readStorage(key) {
   try { return localStorage.getItem(key); } catch { return null; }
 }
 function writeStorage(key, value) {
   try { localStorage.setItem(key, value); } catch { /* stockage indisponible : réglage non mémorisé */ }
 }
-
-function ordinal(n) {
-  return n === 1 ? '1ʳᵉ' : `${n}ᵉ`;
-}
-function capitalize(s) {
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}
+function ordinal(n) { return n === 1 ? '1ʳᵉ' : `${n}ᵉ`; }
+function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
 function escapeHtml(s) {
-  return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }
-
 function todayIso() {
   const now = new Date();
   return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 }
-function toDate(iso) {
-  return new Date(`${iso}T00:00:00Z`);
-}
+function toDate(iso) { return new Date(`${iso}T00:00:00Z`); }
 function addDays(iso, n) {
   const d = toDate(iso);
   d.setUTCDate(d.getUTCDate() + n);
   return d.toISOString().slice(0, 10);
 }
-function sundayOf(iso) {
-  return addDays(iso, -toDate(iso).getUTCDay());
-}
+function sundayOf(iso) { return addDays(iso, -toDate(iso).getUTCDay()); }
 
+function splitObit(name) {
+  const m = name.match(/^(.*?)\s*\((†[^)]*)\)\s*$/);
+  return m ? { text: m[1], obit: m[2] } : { text: name, obit: '' };
+}
+function shortName(c, day) {
+  if (c.rank === 'WEEKDAY' && /^(lundi|mardi|mercredi|jeudi|vendredi|samedi) de la .* semaine/i.test(c.name) && day.season in FERIA_SUFFIX) {
+    return `Férie${FERIA_SUFFIX[day.season]}`;
+  }
+  return capitalize(splitObit(c.name).text);
+}
+function colorLabel(colors) { return colors.map((c) => COLOR_LABELS[c] ?? c).join(' ou '); }
+function isFeria(day) { return day.celebrations[0].rank === 'WEEKDAY' && !day.major; }
+function isKeyDay(day) { return day.major || (day.obligation && toDate(day.date).getUTCDay() !== 0); }
+
+// ── Données ─────────────────────────────────
 async function loadYear(calendar, year) {
   const key = `${calendar}-${year}`;
   if (!yearCache.has(key)) {
     yearCache.set(key, fetch(`data/${calendar}/${year}.json`).then((r) => {
-      if (!r.ok) throw new Error(`Données ${year} introuvables`);
+      if (!r.ok) throw new Error(`données ${year} introuvables`);
       return r.json();
     }));
   }
@@ -82,152 +96,209 @@ async function loadWeek(calendar, startIso) {
   return days;
 }
 
+// ── En-tête de semaine ──────────────────────
 function weekRangeLabel(startIso) {
   const start = toDate(startIso);
   const end = toDate(addDays(startIso, 6));
   const sameMonth = start.getUTCMonth() === end.getUTCMonth();
-  const sameYear = start.getUTCFullYear() === end.getUTCFullYear();
-  const opts = { timeZone: 'UTC', day: 'numeric', month: 'long' };
-  const left = new Intl.DateTimeFormat('fr-FR', sameMonth ? { timeZone: 'UTC', day: 'numeric' } : { ...opts, ...(sameYear ? {} : { year: 'numeric' }) }).format(start);
-  const right = new Intl.DateTimeFormat('fr-FR', { ...opts, year: 'numeric' }).format(end);
-  return `${left} – ${right}`;
+  const left = sameMonth ? String(start.getUTCDate()) : dayMonthFmt.format(start);
+  return `${left} – ${dayMonthFmt.format(end)}`;
 }
 
-function seasonLine(sunday, days) {
-  const weekLabel = SEASON_WEEK[sunday.season]?.(sunday.weekOfSeason) ?? sunday.seasonLabel;
-  const later = days.find((d) => d.season !== sunday.season && d.season !== 'PASCHAL_TRIDUUM');
-  const triduum = days.some((d) => d.season === 'PASCHAL_TRIDUUM');
-  let line = weekLabel;
-  if (triduum) line += ' · Triduum pascal';
-  else if (later) line += ` → ${later.seasonLabel} le ${longDayFmt.format(toDate(later.date)).split(' ')[0]}`;
-  return line;
-}
-
-function cyclesLine(sunday) {
-  const parts = [];
-  if (sunday.sundayCycle) parts.push(`Année ${sunday.sundayCycle.slice(-1)}`);
-  if (sunday.weekdayCycle) parts.push(sunday.weekdayCycle === 'YEAR_2' ? 'année paire' : 'année impaire');
-  if (sunday.psalterWeek) parts.push(`psautier semaine ${ROMAN[sunday.psalterWeek]}`);
-  return parts.join(' · ');
-}
-
-// « lundi de la vingt-huitième semaine du Temps Ordinaire » → « Férie » : la semaine est déjà en en-tête.
-const FERIA_SUFFIX = { ORDINARY_TIME: '', ADVENT: ' de l’Avent', LENT: ' de Carême', EASTER_TIME: ' du Temps pascal' };
-function displayName(c, day) {
-  if (c.rank === 'WEEKDAY' && /^(lundi|mardi|mercredi|jeudi|vendredi|samedi) de la .* semaine/i.test(c.name) && day.season in FERIA_SUFFIX) {
-    return `Férie${FERIA_SUFFIX[day.season]}`;
-  }
-  return c.name;
-}
-
-function splitObit(name) {
-  const m = name.match(/^(.*?)\s*\((†[^)]*)\)\s*$/);
-  return m ? { text: m[1], obit: m[2] } : { text: name, obit: '' };
-}
-
-function colorSwatches(colors) {
-  return colors.map((c) => `<span class="swatch" data-color="${c}"></span>`).join('');
-}
-function colorLabel(colors) {
-  return colors.map((c) => COLOR_LABELS[c] ?? c).join(' ou ');
-}
-
-function renderSummary(days) {
+function seasonLine(days) {
   const sunday = days[0];
-  const keyDays = days.filter((d) => d.major || (d.obligation && toDate(d.date).getUTCDay() !== 0));
-  const highlights = keyDays.length
-    ? `<ul class="highlights">${keyDays.map((d) => {
-        const c = d.celebrations[0];
-        return `<li><span class="swatch" data-color="${c.colors[0]}"></span><span class="hl-day">${capitalize(dayFmt.format(toDate(d.date)).replace('.', ''))} ${toDate(d.date).getUTCDate()}</span><span class="hl-name">${escapeHtml(capitalize(splitObit(c.name).text))}</span></li>`;
-      }).join('')}</ul>`
-    : '<p class="highlights-empty">Pas de solennité ni de fête cette semaine.</p>';
-
-  $('summary').innerHTML = `
-    <p class="season">${escapeHtml(seasonLine(sunday, days))}</p>
-    <p class="cycles">${escapeHtml(cyclesLine(sunday))}</p>
-    <div class="highlights-block">
-      <h3>À retenir</h3>
-      ${highlights}
-    </div>`;
+  const label = SEASON_WEEK[sunday.season]?.(sunday.weekOfSeason) ?? sunday.seasonLabel;
+  if (days.some((d) => d.season === 'PASCHAL_TRIDUUM')) return `${label} · Triduum pascal`;
+  const change = days.find((d) => d.season !== sunday.season);
+  return change ? `${label} → ${change.seasonLabel} le ${dowLongFmt.format(toDate(change.date))}` : label;
 }
 
-function renderDay(day, today) {
+function cyclesLine(day) {
+  return [
+    day.sundayCycle && `Année ${day.sundayCycle.slice(-1)}`,
+    day.weekdayCycle && (day.weekdayCycle === 'YEAR_2' ? 'année paire' : 'année impaire'),
+    day.psalterWeek && `psautier ${ROMAN[day.psalterWeek]}`,
+  ].filter(Boolean).join(' · ');
+}
+
+// ── Rendu ───────────────────────────────────
+function renderStrip(days, today) {
+  $('strip').innerHTML = days.map((d) => {
+    const date = toDate(d.date);
+    const main = d.celebrations[0];
+    const classes = ['strip-day'];
+    if (d.date === state.selected) classes.push('is-selected');
+    if (d.date === today) classes.push('is-today');
+    if (isKeyDay(d)) classes.push('is-key');
+    return `<button type="button" class="${classes.join(' ')}" data-date="${d.date}" data-color="${main.colors[0]}"
+        aria-pressed="${d.date === state.selected}" aria-label="${escapeHtml(capitalize(dowLongFmt.format(date)))} ${date.getUTCDate()} : ${escapeHtml(shortName(main, d))}">
+      <span class="strip-letter">${DAY_LETTERS[date.getUTCDay()]}</span>
+      <span class="strip-num">${date.getUTCDate()}</span>
+      <span class="dot"></span>
+    </button>`;
+  }).join('');
+}
+
+const PLURAL_LABELS = { 'Mémoire facultative': 'Mémoires facultatives', 'Commémoraison': 'Commémoraisons' };
+function othersLabel(others) {
+  const label = others[0].rankLabel;
+  if (!others.every((o) => o.rankLabel === label)) return 'Également';
+  return others.length > 1 ? (PLURAL_LABELS[label] ?? label) : label;
+}
+
+function renderHero(day, today) {
   const [main, ...others] = day.celebrations;
   const date = toDate(day.date);
-  const isSunday = date.getUTCDay() === 0;
-  const { text, obit } = splitObit(displayName(main, day));
-  const isFeria = main.rank === 'WEEKDAY' && !day.major;
-  const classes = ['day', `rank-${main.rank.toLowerCase()}`];
-  if (day.major) classes.push('major');
-  if (isSunday) classes.push('sunday');
-  if (day.date === today) classes.push('today');
-  if (isFeria) classes.push('feria');
+  const { obit } = splitObit(main.name);
+  const title = isFeria(day) ? capitalize(splitObit(main.name).text) : shortName(main, day);
 
   const tags = [];
-  if (!isFeria || main.note) tags.push(`<span class="rank">${escapeHtml(main.rankLabel)}</span>`);
-  if (day.obligation) tags.push('<span class="oblig">Obligation</span>');
-  if (day.date === today) tags.push('<span class="today-tag">Aujourd’hui</span>');
+  if (!isFeria(day) || main.rankLabel !== 'Férie') tags.push(`<span class="tag tag-rank">${escapeHtml(main.rankLabel)}</span>`);
+  if (day.obligation) tags.push('<span class="tag tag-oblig">Obligation</span>');
 
   const othersHtml = others.length
-    ? `<ul class="others">${others.map((o) => {
-        const s = splitObit(o.name);
-        return `<li><span class="swatch small" data-color="${o.colors[0]}"></span><span>${escapeHtml(capitalize(s.text))} <em>${escapeHtml(o.rankLabel.toLowerCase())}</em></span></li>`;
-      }).join('')}</ul>`
+    ? `<div class="hero-others">
+        <p class="hero-label">${escapeHtml(othersLabel(others))}</p>
+        <ul>${others.map((o) => `<li><span class="dot" data-color="${o.colors[0]}"></span>${escapeHtml(capitalize(splitObit(o.name).text))}</li>`).join('')}</ul>
+      </div>`
     : '';
 
-  return `
-    <article class="${classes.join(' ')}" data-color="${main.colors[0]}">
-      <div class="day-date">
-        <span class="dow">${dayFmt.format(date).replace('.', '')}</span>
-        <span class="num">${date.getUTCDate()}</span>
-        <span class="mon">${monthFmt.format(date).replace('.', '')}</span>
-      </div>
-      <div class="day-body">
-        ${tags.length ? `<div class="tags">${tags.join('')}</div>` : ''}
-        <h3 class="title">${escapeHtml(capitalize(text))}${obit ? ` <span class="obit">${escapeHtml(obit)}</span>` : ''}</h3>
-        ${main.note ? `<p class="note">${escapeHtml(main.note)}</p>` : ''}
-        ${othersHtml}
-      </div>
-      <div class="day-color" title="Couleur liturgique">
-        <span class="swatches">${colorSwatches(main.colors)}</span>
-        <span class="color-name">${escapeHtml(colorLabel(main.colors))}</span>
-      </div>
-    </article>`;
+  const hero = $('hero');
+  hero.dataset.color = main.colors[0];
+  hero.className = `hero${day.major ? ' is-major' : ''}${main.rank === 'SOLEMNITY' ? ' is-solemnity' : ''}`;
+  hero.innerHTML = `
+    <div class="hero-top">
+      <p class="hero-date">${day.date === today ? '<span class="today-chip">Aujourd’hui</span>' : ''}${escapeHtml(capitalize(dowLongFmt.format(date)))} ${escapeHtml(dayMonthFmt.format(date))}</p>
+      ${tags.length ? `<div class="tags">${tags.join('')}</div>` : ''}
+    </div>
+    <h2 class="hero-title">${escapeHtml(title)}</h2>
+    ${obit ? `<p class="hero-obit">${escapeHtml(obit)}</p>` : ''}
+    ${main.note ? `<p class="hero-note">${escapeHtml(main.note)}</p>` : ''}
+    <div class="hero-color">
+      <span class="swatches">${main.colors.map((c) => `<span class="swatch" data-color="${c}"></span>`).join('')}</span>
+      <span><span class="hero-label">Couleur liturgique</span><strong>${escapeHtml(colorLabel(main.colors))}</strong></span>
+    </div>
+    ${othersHtml}`;
+}
+
+function renderKey(days) {
+  const keyDays = days.filter(isKeyDay);
+  $('key').hidden = keyDays.length === 0;
+  $('key').innerHTML = `
+    <h2 class="section-title">À retenir</h2>
+    <ul class="key-list">${keyDays.map((d) => {
+      const main = d.celebrations[0];
+      const date = toDate(d.date);
+      return `<li><button type="button" data-date="${d.date}" data-color="${main.colors[0]}">
+        <span class="dot"></span>
+        <span class="key-day">${escapeHtml(capitalize(dowShortFmt.format(date).replace('.', '')))} ${date.getUTCDate()}</span>
+        <span class="key-name">${escapeHtml(shortName(main, d))}</span>
+        <span class="key-rank">${escapeHtml(main.rankLabel)}</span>
+      </button></li>`;
+    }).join('')}</ul>`;
+}
+
+function renderList(days, today) {
+  $('week-list').innerHTML = days.map((d) => {
+    const [main, ...others] = d.celebrations;
+    const date = toDate(d.date);
+    const meta = [];
+    if (!isFeria(d)) meta.push(main.rankLabel);
+    if (d.obligation) meta.push('Obligation');
+    if (others.length) meta.push(others.map((o) => capitalize(splitObit(o.name).text).split(',')[0]).join(' · '));
+    const classes = ['row'];
+    if (d.major) classes.push('is-major');
+    if (isFeria(d)) classes.push('is-feria');
+    if (d.date === state.selected) classes.push('is-selected');
+    if (d.date === today) classes.push('is-today');
+    return `<li><button type="button" class="${classes.join(' ')}" data-date="${d.date}" data-color="${main.colors[0]}">
+      <span class="row-date"><span class="row-dow">${escapeHtml(dowShortFmt.format(date).replace('.', ''))}</span><span class="row-num">${date.getUTCDate()}</span></span>
+      <span class="row-body">
+        <span class="row-name">${escapeHtml(shortName(main, d))}</span>
+        ${meta.length ? `<span class="row-meta">${escapeHtml(meta.join(' · '))}</span>` : ''}
+      </span>
+      <span class="dot"></span>
+    </button></li>`;
+  }).join('');
+}
+
+function renderSelection() {
+  const today = todayIso();
+  const day = state.days.find((d) => d.date === state.selected) ?? state.days[0];
+  renderStrip(state.days, today);
+  renderHero(day, today);
+  renderList(state.days, today);
 }
 
 let renderToken = 0;
-async function render() {
+async function render(direction = 0) {
   const token = ++renderToken;
   const today = todayIso();
-  $('week-range').textContent = weekRangeLabel(state.weekStart);
-  $('today').hidden = state.weekStart === sundayOf(today);
   $('calendar-name').textContent = CALENDAR_LABELS[state.calendar];
   $('footer-calendar').textContent = CALENDAR_LABELS[state.calendar];
+  $('week-range').textContent = weekRangeLabel(state.weekStart);
+
+  const weekDates = Array.from({ length: 7 }, (_, i) => addDays(state.weekStart, i));
+  if (!weekDates.includes(state.selected)) state.selected = weekDates.includes(today) ? today : state.weekStart;
+  $('today').hidden = state.selected === today;
 
   try {
     const days = await loadWeek(state.calendar, state.weekStart);
     if (token !== renderToken) return;
-    if (days.some((d) => !d)) throw new Error('Semaine hors des années disponibles');
-    renderSummary(days);
-    $('days').innerHTML = days.map((d) => renderDay(d, today)).join('');
+    if (days.some((d) => !d)) throw new Error('semaine hors des années disponibles');
+    state.days = days;
+    $('season').textContent = seasonLine(days);
+    $('cycles').textContent = cyclesLine(days[0]);
+    renderKey(days);
+    renderSelection();
+    if (direction) {
+      const content = $('content');
+      content.classList.remove('slide-next', 'slide-prev');
+      void content.offsetWidth;
+      content.classList.add(direction > 0 ? 'slide-next' : 'slide-prev');
+    }
   } catch (err) {
     if (token !== renderToken) return;
-    $('summary').innerHTML = '';
-    $('days').innerHTML = `<p class="error">Impossible d’afficher cette semaine (${escapeHtml(err.message)}). Vérifie ta connexion puis réessaie.</p>`;
+    $('hero').className = 'hero';
+    $('hero').innerHTML = `<p class="error">Impossible d’afficher cette semaine (${escapeHtml(err.message)}). Vérifie ta connexion puis réessaie.</p>`;
+    $('week-list').innerHTML = '';
+    $('key').hidden = true;
   }
 }
 
 function goWeeks(n) {
   state.weekStart = addDays(state.weekStart, 7 * n);
-  render();
+  state.selected = '';
+  render(n);
 }
 
+function select(iso) {
+  state.selected = iso;
+  $('today').hidden = iso === todayIso();
+  renderSelection();
+}
+
+// ── Interactions ────────────────────────────
 $('prev').addEventListener('click', () => goWeeks(-1));
 $('next').addEventListener('click', () => goWeeks(1));
 $('today').addEventListener('click', () => {
-  state.weekStart = sundayOf(todayIso());
-  render();
+  const today = todayIso();
+  const sameWeek = sundayOf(today) === state.weekStart;
+  state.weekStart = sundayOf(today);
+  state.selected = today;
+  if (sameWeek) select(today);
+  else render();
 });
+for (const id of ['strip', 'week-list', 'key']) {
+  $(id).addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-date]');
+    if (!btn) return;
+    select(btn.dataset.date);
+    if (id !== 'strip' && window.matchMedia('(max-width: 999px)').matches) {
+      $('hero').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+}
 document.addEventListener('keydown', (e) => {
   if (e.target.closest?.('dialog')) return;
   if (e.key === 'ArrowLeft') goWeeks(-1);
@@ -236,10 +307,10 @@ document.addEventListener('keydown', (e) => {
 
 // Balayage gauche/droite sur téléphone pour changer de semaine.
 let touchStart = null;
-$('days').addEventListener('touchstart', (e) => {
+$('content').addEventListener('touchstart', (e) => {
   touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
 }, { passive: true });
-$('days').addEventListener('touchend', (e) => {
+$('content').addEventListener('touchend', (e) => {
   if (!touchStart) return;
   const dx = e.changedTouches[0].clientX - touchStart.x;
   const dy = e.changedTouches[0].clientY - touchStart.y;
@@ -247,69 +318,57 @@ $('days').addEventListener('touchend', (e) => {
   if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) goWeeks(dx < 0 ? 1 : -1);
 });
 
-// ── Réglages : calendrier + apparence ──────────
-const APPEARANCE_KEYS = ['theme', 'accent', 'size', 'font', 'density'];
+// ── Réglages ────────────────────────────────
 const settings = $('settings');
 
 function readAppearance() {
   try { return JSON.parse(readStorage('appearance') ?? '{}'); } catch { return {}; }
 }
-
 function applyAppearance(prefs) {
   const root = document.documentElement;
-  for (const key of APPEARANCE_KEYS) {
-    if (prefs[key]) root.dataset[key] = prefs[key];
-    else delete root.dataset[key];
-  }
+  root.dataset.style = prefs.style || 'lumiere';
+  if (prefs.size) root.dataset.size = prefs.size;
+  else delete root.dataset.size;
+  document.querySelector('meta[name="theme-color"]').content = THEME_COLORS[root.dataset.style];
 }
-
-function syncSettingsForm() {
-  settings.querySelector(`input[name="calendar"][value="${state.calendar}"]`).checked = true;
-  const prefs = readAppearance();
-  for (const key of APPEARANCE_KEYS) {
-    const input = settings.querySelector(`input[name="${key}"][value="${prefs[key] ?? ''}"]`);
-    if (input) input.checked = true;
-  }
-}
-
 function openSettings(sectionId) {
-  syncSettingsForm();
+  const prefs = readAppearance();
+  settings.querySelector(`input[name="calendar"][value="${state.calendar}"]`).checked = true;
+  settings.querySelector(`input[name="style"][value="${prefs.style || 'lumiere'}"]`).checked = true;
+  settings.querySelector(`input[name="size"][value="${prefs.size || ''}"]`).checked = true;
   settings.showModal();
   if (sectionId) $(sectionId).scrollIntoView({ block: 'start' });
 }
 
-$('open-settings').addEventListener('click', () => openSettings('section-calendar'));
-$('open-appearance').addEventListener('click', () => openSettings('section-appearance'));
+$('open-calendar').addEventListener('click', () => openSettings('section-calendar'));
+$('open-settings').addEventListener('click', () => openSettings());
 settings.addEventListener('click', (e) => {
   if (e.target === settings) settings.close();
 });
-settings.querySelectorAll('input[name="calendar"]').forEach((input) => {
-  input.addEventListener('change', () => {
-    state.calendar = input.value;
-    writeStorage('calendar', input.value);
+settings.addEventListener('change', (e) => {
+  const { name, value } = e.target;
+  if (name === 'calendar') {
+    state.calendar = value;
+    writeStorage('calendar', value);
     render();
-  });
+    return;
+  }
+  const prefs = { ...readAppearance(), [name]: value };
+  if (!value) delete prefs[name];
+  writeStorage('appearance', JSON.stringify(prefs));
+  applyAppearance(prefs);
 });
-for (const key of APPEARANCE_KEYS) {
-  settings.querySelectorAll(`input[name="${key}"]`).forEach((input) => {
-    input.addEventListener('change', () => {
-      const prefs = { ...readAppearance(), [key]: input.value };
-      if (!input.value) delete prefs[key];
-      writeStorage('appearance', JSON.stringify(prefs));
-      applyAppearance(prefs);
-    });
-  });
-}
-$('reset-appearance').addEventListener('click', () => {
-  writeStorage('appearance', '{}');
-  applyAppearance({});
-  syncSettingsForm();
-});
+
 applyAppearance(readAppearance());
 
 // Revenir sur l'app un autre jour : on recale sur la bonne semaine.
+let lastSeenDay = todayIso();
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible') render();
+  if (document.visibilityState !== 'visible' || todayIso() === lastSeenDay) return;
+  lastSeenDay = todayIso();
+  state.weekStart = sundayOf(lastSeenDay);
+  state.selected = lastSeenDay;
+  render();
 });
 
 render();
