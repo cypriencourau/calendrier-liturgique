@@ -1,0 +1,25 @@
+{
+  "name": "calendrier-liturgique",
+  "version": "1.0.0",
+  "description": "Semaine liturgique perso : fêtes, saints et couleurs",
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "dev": "npm run data && vite",
+    "build": "npm run data && vite build",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fontsource/eb-garamond": "^5.3.0",
+    "@romcal/calendar.france": "^3.0.0-dev.140",
+    "@romcal/calendar.philippines": "^3.0.0-dev.140",
+    "nodemailer": "^10.1.0",
+    "romcal": "^3.0.0-dev.140"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0"
+  },
+  "private": true
+}

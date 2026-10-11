@@ -1,0 +1,25 @@
+# Envoie le récap de la semaine chaque dimanche après-midi.
+name: Mail du dimanche
+
+on:
+  schedule:
+    # Heure en UTC. 07:00 UTC = 15:00 à Manille.
+    # Au retour en France : '0 13 * * 0' (15:00 l'été, 14:00 l'hiver à Paris).
+    - cron: '0 7 * * 0'
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/send-weekly-email.mjs
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
