@@ -548,5 +548,1829 @@
     "sources": [
       { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_Bosco" }
     ]
+  },
+  "blaise_of_sebaste_bishop": {
+    "role": "Médecin, évêque de Sébaste, martyr",
+    "era": "IVᵉ siècle selon la tradition",
+    "born": "IIIᵉ siècle, à Sébaste",
+    "died": "Vers 316, à Sébaste",
+    "patron": "Maux de gorge, cardeurs, tailleurs de pierre, Dubrovnik",
+    "story": "Selon la tradition, Blaise est médecin avant de devenir évêque de Sébaste, et il meurt martyr vers 316, sous Licinius. Son culte se répand largement : en 1222, le concile d’Oxford interdit de travailler le jour de sa fête, et Dubrovnik le prend pour patron.",
+    "caution": "Son ermitage entouré d’animaux, raconté par La Légende dorée, relève de l’hagiographie.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Blaise_de_Sébaste" }
+    ]
+  },
+  "ansgar_of_hamburg_bishop": {
+    "role": "Moine, archevêque de Hambourg, missionnaire",
+    "era": "IXᵉ siècle",
+    "born": "8 septembre 801, à Fouilloy (Somme)",
+    "died": "3 février 865, à Brême",
+    "patron": "Danemark",
+    "story": "Moine de Corbie puis de Corvey, Anschaire arrive au Danemark en 826, mais sa mission s’interrompt avec l’éviction du roi Harald Klak. En 829, il gagne la Suède, où naît une première communauté chrétienne à Birka. Archevêque de Hambourg en 831, il voit la ville ravagée par un raid en 845, puis finit seul responsable de la mission du Nord.",
+    "caution": "Sa vie est connue par la Vita Anskarii de Rimbert, une source hagiographique.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Anschaire_de_Brême" }
+    ]
+  },
+  "agatha_of_sicily_virgin": {
+    "role": "Vierge et martyre",
+    "era": "IIIᵉ siècle selon la tradition",
+    "born": "Vers 231 selon la tradition, à Catane",
+    "died": "251 selon la tradition, à Catane",
+    "patron": "Catane, Saint-Marin, nourrices, fondeurs de cloches ; invoquée contre les incendies et les éruptions de l’Etna",
+    "story": "Agathe est vénérée depuis très longtemps à Catane, en Sicile, dont elle est la patronne. À Rome, une église lui est dédiée dès 470. Ses reliques reviennent à Catane en 1126, et sa fête y est aujourd’hui inscrite au patrimoine de l’UNESCO.",
+    "caution": "Sa Passion, écrite au Vᵉ siècle, vient de traditions tardives. Les tortures, l’apparition de Pierre et le séisme à sa mort relèvent de la légende.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Agathe_de_Catane" }
+    ]
+  },
+  "jerome_emiliani": {
+    "role": "Fondateur des Somasques",
+    "era": "XVᵉ-XVIᵉ siècle",
+    "born": "1486, à Venise",
+    "died": "8 février 1537, à Somasca (Italie)",
+    "patron": "Orphelins, jeunesse abandonnée",
+    "story": "Après une captivité à Castelnuovo, Jérôme se consacre aux plus démunis. En 1532, il fonde à Somasca une congrégation, approuvée par Paul III en 1540. Il meurt en soignant les pestiférés. Clément XIII le canonise en 1767, et Pie XI le proclame patron des orphelins en 1928.",
+    "caution": "Sa vocation est rattachée à une vision de la Vierge pendant sa captivité. Les indications divergent sur son état : il serait resté laïc toute sa vie.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jérôme_Émilien" }
+    ]
+  },
+  "josephine_bakhita_virgin": {
+    "role": "Ancienne esclave, religieuse canossienne",
+    "era": "XIXᵉ-XXᵉ siècle",
+    "born": "Vers 1869, à Olgossa (Darfour)",
+    "died": "8 février 1947, à Schio (Italie)",
+    "story": "Enlevée et réduite en esclavage, elle est achetée à Khartoum en 1883 par Calisto Legnani. Le 29 novembre 1889, elle est déclarée libre en Italie, puis baptisée à Venise le 9 janvier 1890. Religieuse canossienne, elle prononce ses premiers vœux en 1896 et vit à Schio à partir de 1902. Jean-Paul II la canonise le 1ᵉʳ octobre 2000.",
+    "caution": "Son nom de naissance est inconnu. Le nombre de ses ventes comme esclave varie selon les récits.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Joséphine_Bakhita" }
+    ]
+  },
+  "scholastica_of_nursia_virgin": {
+    "role": "Moniale, sœur de saint Benoît",
+    "era": "VIᵉ siècle",
+    "born": "Vers 480, à Nursie (Italie)",
+    "died": "Vers 547, près du Mont-Cassin",
+    "patron": "Le Mans ; invoquée pour obtenir la pluie",
+    "story": "Selon Grégoire le Grand, Scholastique est la sœur de Benoît de Nursie. Elle vit à Piumarola, près du Mont-Cassin. Lors de sa dernière visite à son frère, un orage providentiel le retient auprès d’elle, et elle meurt trois jours plus tard. Benoît voit alors son âme monter au ciel sous la forme d’une colombe.",
+    "caution": "Ces récits viennent de l’hagiographie. Une tradition plus tardive fait d’elle la jumelle de Benoît.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Scholastique_de_Nursie" }
+    ]
+  },
+  "cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop": {
+    "role": "Moine et évêque, apôtres des Slaves",
+    "era": "IXᵉ siècle",
+    "born": "Vers 826-827 (Cyrille), vers 815 (Méthode), à Thessalonique",
+    "died": "14 février 869 à Rome (Cyrille) ; 6 avril 885 en Grande-Moravie (Méthode)",
+    "patron": "Co-patrons de l’Europe",
+    "story": "Frères originaires de Thessalonique, Constantin, futur Cyrille, et Méthode partent en mission chez les Khazars vers 860, puis vers les Slaves. En 867, ils se rendent à Rome, où Cyrille meurt moine en 869. Évêque, Méthode poursuit l’œuvre et subit une captivité de 870 à 873. Ils sont proclamés co-patrons de l’Europe le 31 décembre 1980.",
+    "caution": "L’alphabet glagolitique et la traduction de la Bible leur sont attribués par leurs hagiographes.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 17 juin 2009", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2009/documents/hf_ben-xvi_aud_20090617.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Cyrille_et_Méthode" }
+    ]
+  },
+  "seven_holy_founders_of_the_servite_order": {
+    "role": "Fondateurs de l’ordre des Servites",
+    "era": "XIIIᵉ siècle",
+    "story": "Vers 1233, à Florence, sept marchands fondent un ordre mendiant, placé sous la règle de saint Augustin et dédié à la Vierge. L’ordre reçoit une première approbation le 13 mars 1249, échappe à une suppression annoncée en 1276 et obtient son approbation définitive le 11 février 1304. Léon XIII canonise les sept ensemble le 15 janvier 1888.",
+    "caution": "Les listes de leurs noms divergent, et l’apparition mariale du Vendredi saint 1239 vient d’un récit tardif.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Ordre_des_Servites_de_Marie" }
+    ]
+  },
+  "bernadette_soubirous_virgin": {
+    "role": "Religieuse, voyante de Lourdes",
+    "era": "XIXᵉ siècle",
+    "born": "7 janvier 1844, à Lourdes",
+    "died": "16 avril 1879, à Nevers",
+    "story": "À Lourdes, Bernadette affirme avoir vu dix-huit apparitions à Massabielle, du 11 février au 16 juillet 1858. En 1864, elle entre chez les sœurs de la Charité de Nevers, où elle prononce ses vœux perpétuels en 1878. Elle meurt à 35 ans. Pie XI la canonise le 8 décembre 1933.",
+    "caution": "Des rumeurs circulent dès son vivant ; elle-même nie avoir été témoin de guérisons.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Bernadette_Soubirous" }
+    ]
+  },
+  "peter_damian_bishop": {
+    "role": "Moine, cardinal-évêque d’Ostie, docteur de l’Église",
+    "era": "XIᵉ siècle",
+    "born": "1007, à Ravenne",
+    "died": "Février 1072, à Faenza (Italie)",
+    "story": "Pierre se retire vers 1034-1035 à l’ermitage de Fonte Avellana. Devenu cardinal-évêque d’Ostie vers 1057-1058, il mène des missions pour la papauté, à Milan en 1059 et à Francfort en 1069, et écrit en 1051 son Livre de Gomorrhe contre les désordres du clergé. Il est proclamé docteur de l’Église en 1828.",
+    "caution": "Son enfance de porcher et son adoption par son frère Damien viennent de la tradition. Il n’a jamais été canonisé formellement.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 9 septembre 2009", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2009/documents/hf_ben-xvi_aud_20090909.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pierre_Damien" }
+    ]
+  },
+  "polycarp_of_smyrna_bishop": {
+    "role": "Évêque de Smyrne, martyr",
+    "era": "IIᵉ siècle",
+    "born": "Vers 69 ou vers 81",
+    "died": "155 ou 167, à Smyrne",
+    "story": "Père apostolique, Polycarpe est présenté par la tradition comme un disciple de l’apôtre Jean. Évêque de Smyrne, il meurt brûlé vif, à un âge très avancé. Le récit de son martyre est l’un des documents sur lesquels on s’appuie pour dater sa mort. Sa fête, le 23 février, est commune à toutes les Églises.",
+    "caution": "La date de sa mort reste débattue : 155 d’après le récit du Martyre, 167 d’après Eusèbe. La Vie romanesque de Polycarpe est bien plus tardive.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Polycarpe_de_Smyrne" }
+    ]
+  },
+  "gregory_of_narek_abbot": {
+    "role": "Moine, poète mystique, docteur de l’Église",
+    "era": "Xᵉ-XIᵉ siècle",
+    "born": "Entre 945 et 951, dans le Vaspourakan (Arménie)",
+    "died": "Vers 1003-1010, à Narek",
+    "story": "Moine au monastère de Narek, Grégoire y est ordonné prêtre en 977, année où il commente le Cantique des cantiques. Il achève en 1002 son Livre des Lamentations. Enseignant et grand poète mystique de l’Église arménienne, il est proclamé docteur de l’Église par le pape François le 12 avril 2015.",
+    "caution": "Les dates de sa naissance et de sa mort varient selon les sources.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Grégoire_de_Narek" }
+    ]
+  },
+  "casimir_of_poland": {
+    "role": "Prince de Pologne",
+    "era": "XVᵉ siècle",
+    "born": "3 octobre 1458, à Cracovie",
+    "died": "4 mars 1484, à Grodno",
+    "patron": "Lituanie, Pologne, jeunesse",
+    "story": "Fils du roi de Pologne, Casimir se voit confier la régence du royaume par son père en 1479. Il meurt à 25 ans, probablement de la tuberculose. Il est canonisé en 1522, devient patron de la Lituanie en 1613, et Pie XII le proclame patron de la jeunesse en 1948.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Casimir_de_Pologne" }
+    ]
+  },
+  "perpetua_of_carthage_and_felicity_of_carthage_martyrs": {
+    "role": "Martyres de Carthage",
+    "era": "IIIᵉ siècle",
+    "born": "Vers 181, à Thuburbo (Tunisie actuelle)",
+    "died": "7 mars 203, à Carthage",
+    "patron": "Vierzon (Perpétue)",
+    "story": "Le 7 mars 203, Perpétue et Félicité entrent dans l’amphithéâtre de Carthage, où elles sont mises à mort. Le récit de leur passion a traversé les siècles et leur culte s’est largement diffusé. Leurs reliques sont vénérées notamment à Vierzon.",
+    "caution": "L’auteur de la Passion est anonyme, et l’attribution à Tertullien est moins retenue aujourd’hui. Le statut de servante de Félicité n’est pas attesté.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Perpétue_et_Félicité" }
+    ]
+  },
+  "john_of_god_duarte_cidade_religious": {
+    "role": "Religieux, fondateur des Hospitaliers",
+    "era": "XVIᵉ siècle",
+    "born": "8 mars 1495, à Montemor-o-Novo (Portugal)",
+    "died": "8 mars 1550, à Grenade",
+    "patron": "Malades, hôpitaux, infirmiers",
+    "story": "Né João Cidade, il combat devant Vienne en 1532. En 1537, à Grenade, il est bouleversé par un sermon de Jean d’Avila et fonde un asile pour les malades. Il meurt en 1550, après s’être jeté dans le Genil pour sauver un homme. Il est canonisé en 1690.",
+    "caution": "La couronne d’épines reçue de la Vierge et ses stigmates relèvent de la légende.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_de_Dieu" }
+    ]
+  },
+  "frances_of_rome_religious": {
+    "role": "Épouse et mère, fondatrice des Oblates",
+    "era": "XIVᵉ-XVᵉ siècle",
+    "born": "1384, à Rome",
+    "died": "9 mars 1440, à Rome",
+    "patron": "Co-patronne de Rome, automobilistes",
+    "story": "Épouse et mère, Françoise vit à Rome. À partir de 1414, elle fait dicter ses visions à son confesseur. Le 15 août 1425, elle fonde les Oblates de Marie. Veuve en 1436, elle meurt quatre ans plus tard. Paul V la canonise le 29 mai 1608.",
+    "caution": "Sa Vie par Giovanni Mattiotti est empreinte de légendes, comme le pain multiplié et le raisin cueilli en janvier.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Françoise_Romaine" }
+    ]
+  },
+  "patrick_of_ireland_bishop": {
+    "role": "Évêque, apôtre de l’Irlande",
+    "era": "Vᵉ siècle",
+    "born": "Vers 386, en Bretagne insulaire",
+    "died": "Vers 460-462 selon la tradition, à Down (Irlande)",
+    "patron": "Irlande, Nigeria, New York, Boston",
+    "story": "Capturé à 16 ans vers 405 et emmené en Irlande, Patrick regagne ensuite la Bretagne insulaire. Il repart en 432 pour l’Irlande, dont il devient l’apôtre et l’évêque. Sa fête, le 17 mars, est célébrée dans le monde entier.",
+    "caution": "C’est un personnage en partie légendaire, et les dates de sa vie varient beaucoup selon les sources.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Patrick_d'Irlande" }
+    ]
+  },
+  "cyril_of_jerusalem_bishop": {
+    "role": "Évêque de Jérusalem, docteur de l’Église",
+    "era": "IVᵉ siècle",
+    "born": "Vers 315, à Jérusalem ou aux environs",
+    "died": "387, à Jérusalem",
+    "story": "Prêtre avant 348, Cyrille devient évêque de Jérusalem. Dans le contexte des controverses de son temps, il est déposé en 357, puis exilé à plusieurs reprises, et il n’est reconnu évêque légitime qu’au concile de Constantinople en 381. Léon XIII le proclame docteur de l’Église en 1883.",
+    "caution": "Les catéchèses mystagogiques qu’on lui attribuait sont aujourd’hui souvent données à Jean II.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 27 juin 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070627.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Cyrille_de_Jérusalem" }
+    ]
+  },
+  "joseph_spouse_of_mary": {
+    "role": "Époux de la Vierge Marie",
+    "era": "Iᵉʳ siècle",
+    "died": "Iᵉʳ siècle, à Nazareth selon la tradition",
+    "patron": "Église universelle, charpentiers, travailleurs, pères de famille, bonne mort",
+    "story": "Joseph apparaît surtout dans les récits d’enfance des Évangiles de Matthieu et de Luc, écrits vers 85. Chef de la Sainte Famille, il est vénéré par les catholiques et les orthodoxes. Pie IX le proclame patron de l’Église universelle en 1870.",
+    "caution": "Les détails sur sa vie, comme sa mort à 111 ans, viennent de textes apocryphes, tels que l’Histoire de Joseph le charpentier.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Joseph_(père_de_Jésus)" }
+    ]
+  },
+  "turibius_of_mogrovejo_bishop": {
+    "role": "Archevêque de Lima",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "16 novembre 1538, à Mayorga (Espagne)",
+    "died": "23 mars 1606, à Zaña (Pérou)",
+    "patron": "Lima, épiscopat latino-américain, évêques missionnaires",
+    "story": "Encore laïc, Turibe préside l’Inquisition de Grenade en 1572. Ordonné prêtre en 1578, il est choisi pour l’archevêché de Lima et arrive au Pérou en 1579. Il meurt à Zaña un Jeudi saint, en 1606. Benoît XIII le canonise en 1726.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Turibe_de_Mogrovejo" }
+    ]
+  },
+  "francis_of_paola_hermit": {
+    "role": "Ermite, fondateur des Minimes",
+    "era": "XVᵉ-XVIᵉ siècle",
+    "born": "27 mars 1416, à Paule (Calabre)",
+    "died": "2 avril 1507, à Plessis-lès-Tours",
+    "patron": "Calabre, Sicile, ermites, marins",
+    "story": "Ermite calabrais et thaumaturge réputé, François voit son ordre reconnu par Sixte IV le 17 mai 1474. Il gagne la France en 1483, auprès de Louis XI mourant, et y fonde des couvents à Tours et à Amboise. Il meurt à plus de 90 ans. Léon X le canonise en 1519.",
+    "caution": "La traversée du détroit de Messine sur son manteau et les morts ressuscités relèvent de la légende.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/François_de_Paule" }
+    ]
+  },
+  "isidore_of_seville_bishop": {
+    "role": "Évêque de Séville, docteur de l’Église",
+    "era": "VIᵉ-VIIᵉ siècle",
+    "born": "Entre 560 et 570, à Carthagène",
+    "died": "4 avril 636, à Séville",
+    "patron": "Étudiants, informaticiens, internautes",
+    "story": "Isidore succède comme évêque de Séville à son frère Léandre vers 599-601. Il joue un rôle majeur au IVᵉ concile de Tolède en 633 et rassemble le savoir de son temps dans ses Étymologies. Innocent XIII le proclame docteur de l’Église en 1722.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 18 juin 2008", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2008/documents/hf_ben-xvi_aud_20080618.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Isidore_de_Séville" }
+    ]
+  },
+  "vincent_ferrer_priest": {
+    "role": "Prêtre dominicain, prédicateur",
+    "era": "XIVᵉ-XVᵉ siècle",
+    "born": "23 janvier 1350, près de Valence (Espagne)",
+    "died": "5 avril 1419, à Vannes",
+    "patron": "Vannes, Communauté valencienne, constructeurs",
+    "story": "Ordonné prêtre en 1379, Vincent commence en 1399 vingt années de prédication itinérante. Il joue un rôle au compromis de Caspe en 1412 et meurt à Vannes en 1419. Calixte III le canonise en 1455.",
+    "caution": "Il aurait été l’un des instigateurs du pogrom de 1391, ce qui fait débat : l’article signale un manque de neutralité.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Vincent_Ferrier" }
+    ]
+  },
+  "john_baptist_de_la_salle_priest": {
+    "role": "Prêtre, fondateur des Frères des écoles chrétiennes",
+    "era": "XVIIᵉ-XVIIIᵉ siècle",
+    "born": "30 avril 1651, à Reims",
+    "died": "7 avril 1719, près de Rouen",
+    "patron": "Enseignants, éducateurs",
+    "story": "Ordonné prêtre en 1678, Jean-Baptiste fonde sa congrégation le 25 mai 1684 pour instruire les enfants. Il ouvre des écoles à Paris dès 1688 et un noviciat à Vaugirard en 1692. Léon XIII le canonise le 24 mai 1900, et Pie XII le proclame patron des éducateurs en 1950.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean-Baptiste_de_La_Salle" }
+    ]
+  },
+  "stanislaus_of_szczepanow_bishop": {
+    "role": "Évêque de Cracovie, martyr",
+    "era": "XIᵉ siècle",
+    "born": "Vers 1030, à Szczepanów (Pologne)",
+    "died": "11 avril 1079 ou 8 mai, à Cracovie",
+    "patron": "Pologne",
+    "story": "Nommé évêque de Cracovie en 1072, Stanislas meurt martyr en 1079. Ses reliques sont déposées au Wawel en 1089, et Innocent IV le canonise à Assise le 17 septembre 1253. Il est un des grands patrons de la Pologne.",
+    "caution": "Il est difficile de démêler le vrai du légendaire, comme les aigles protégeant son corps qui se reconstitue miraculeusement.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Stanislas_de_Szczepanów" }
+    ]
+  },
+  "martin_i_pope": {
+    "role": "Pape et martyr",
+    "era": "VIIᵉ siècle",
+    "born": "Vers 600, près de Todi (Italie)",
+    "died": "16 septembre 655 ou 13 avril 656, en Crimée",
+    "story": "Élu pape le 5 juillet 649, Martin réunit en octobre de la même année le synode du Latran. Arrêté à Rome le 17 juin 653 et jugé à Constantinople en décembre, il est exilé à Chersonèse en avril 654, où il meurt.",
+    "caution": "La réalité ou l’ampleur du synode du Latran ont été mises en doute au XXᵉ siècle.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Martin_Ier_(pape)" }
+    ]
+  },
+  "anselm_of_canterbury_bishop": {
+    "role": "Moine, archevêque de Cantorbéry, docteur de l’Église",
+    "era": "XIᵉ-XIIᵉ siècle",
+    "born": "1033 ou début 1034, à Aoste",
+    "died": "21 avril 1109, à Cantorbéry",
+    "story": "Anselme quitte l’Italie, arrive à Avranches en 1059 et entre l’année suivante à l’abbaye du Bec, en Normandie. Il y écrit son Monologion en 1076 et en devient abbé. Consacré archevêque de Cantorbéry en décembre 1093, il est proclamé docteur de l’Église en 1720.",
+    "caution": "Son rêve d’enfance, un repas avec Dieu, est rapporté par son biographe Eadmer.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 23 septembre 2009", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2009/documents/hf_ben-xvi_aud_20090923.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Anselme_de_Cantorbéry" }
+    ]
+  },
+  "george_of_lydda_martyr": {
+    "role": "Martyr",
+    "era": "IIIᵉ-IVᵉ siècle selon la tradition",
+    "born": "Vers 275-280, en Cappadoce",
+    "died": "23 avril 303, à Nicomédie, selon la tradition",
+    "patron": "Cavaliers, scouts, Angleterre, Géorgie, Catalogne, Portugal",
+    "story": "Selon la tradition, Georges est décapité à Nicomédie en 303, après les édits de Dioclétien. Grand martyr pour l’Orient, il est l’un des saints les plus populaires de la chrétienté et le patron de nombreux pays et villes.",
+    "caution": "Sa Passion était déjà classée parmi les apocryphes à la fin du Vᵉ siècle. Son combat contre le dragon relève de la légende.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Georges_de_Lydda" }
+    ]
+  },
+  "adalbert_of_prague_bishop": {
+    "role": "Moine, évêque de Prague, martyr",
+    "era": "Xᵉ siècle",
+    "born": "Vers 956, à Libice (Bohême)",
+    "died": "23 avril 997, près de la Vistule",
+    "patron": "Bohême, Pologne, Prusse",
+    "story": "Investi évêque de Prague en 983, Adalbert s’exile à Rome vers 988 et fonde Břevnov en 993. En septembre 995, ses frères sont massacrés à Libice. Devenu missionnaire, il meurt martyr en 997. Sylvestre II le canonise en 999, et Otton III vient prier sur sa tombe à Gniezno en l’an 1000.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Adalbert_de_Prague" }
+    ]
+  },
+  "fidelis_of_sigmaringen_priest": {
+    "role": "Prêtre capucin, martyr",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "1ᵉʳ octobre 1578, à Sigmaringen (Allemagne)",
+    "died": "24 avril 1622, à Seewis (Suisse)",
+    "story": "Ordonné prêtre en 1612, Fidèle entre la même année chez les capucins et se fait prédicateur. Il est assassiné à Seewis le 24 avril 1622. Benoît XIV le canonise le 29 juin 1746.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Fidèle_de_Sigmaringen" }
+    ]
+  },
+  "mark_evangelist": {
+    "role": "Évangéliste",
+    "era": "Iᵉʳ siècle",
+    "born": "Vers 5 selon la tradition, à Cyrène ou en Galilée",
+    "died": "Vers 68 selon la tradition, à Alexandrie",
+    "patron": "Venise, notaires, secrétaires, écrivains",
+    "story": "La tradition, attestée dès le IIᵉ siècle par Papias puis par Irénée, attribue à Marc le deuxième Évangile. Ses reliques sont volées à Alexandrie par des marchands vénitiens, et Venise fait de lui son patron.",
+    "caution": "Son identification avec le Jean-Marc des Actes est incertaine, et l’exégèse conteste l’attribution de l’Évangile.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Marc_(évangéliste)" }
+    ]
+  },
+  "peter_chanel_priest": {
+    "role": "Prêtre mariste, martyr",
+    "era": "XIXᵉ siècle",
+    "born": "12 juillet 1803, à Cuet (Ain)",
+    "died": "28 avril 1841, à Futuna",
+    "patron": "Océanie",
+    "story": "Parti du Havre le 24 décembre 1836, Pierre arrive à Futuna le 8 novembre 1837. Seul sur l’île, il y soigne les blessés de la guerre de 1839. Il meurt martyr en 1841. Pie XII le canonise le 12 juin 1954.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pierre_Chanel" }
+    ]
+  },
+  "louis_grignion_de_montfort_priest": {
+    "role": "Prêtre missionnaire, fondateur",
+    "era": "XVIIᵉ-XVIIIᵉ siècle",
+    "born": "31 janvier 1673, à Montfort-sur-Meu",
+    "died": "28 avril 1716, à Saint-Laurent-sur-Sèvre",
+    "story": "Ordonné à Paris en 1700, Louis-Marie fonde les Filles de la Sagesse en 1703 et la Compagnie de Marie en 1705. Reçu par Clément XI le 6 juin 1706, il prêche ensuite de très nombreuses missions populaires dans l’ouest de la France. Pie XII le canonise le 20 juillet 1947.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Louis-Marie_Grignion_de_Montfort" }
+    ]
+  },
+  "catherine_of_siena_virgin": {
+    "role": "Tertiaire dominicaine, docteur de l’Église",
+    "era": "XIVᵉ siècle",
+    "born": "25 mars 1347, à Sienne",
+    "died": "29 avril 1380, à Rome",
+    "patron": "Italie, Rome, co-patronne de l’Europe",
+    "story": "Tertiaire dominicaine et mystique, Catherine est convoquée à Florence en 1374 et meurt à 33 ans. Pie II la canonise en 1461. Paul VI la proclame docteur de l’Église le 3 octobre 1970, et Jean-Paul II co-patronne de l’Europe en 1999.",
+    "caution": "L’anneau visible d’elle seule et l’échange des cœurs sont rapportés par son confesseur Raymond de Capoue.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 24 novembre 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20101124.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Catherine_de_Sienne" }
+    ]
+  },
+  "pius_v_pope": {
+    "role": "Pape, dominicain",
+    "era": "XVIᵉ siècle",
+    "born": "17 janvier 1504, à Bosco Marengo (Piémont)",
+    "died": "1ᵉʳ mai 1572, à Rome",
+    "story": "Dominicain, cardinal en 1557, Pie V est élu pape le 7 janvier 1566. Il promulgue en 1570 la bulle Quo primum, excommunie Élisabeth Iʳᵉ la même année, et la victoire de Lépante a lieu sous son pontificat, le 7 octobre 1571. Clément XI le canonise le 22 mai 1712.",
+    "caution": "L’attribution de Lépante au rosaire et sa connaissance surnaturelle de la victoire relèvent de la tradition.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pie_V" }
+    ]
+  },
+  "paul_miki_and_companions_martyrs": {
+    "role": "Jésuite japonais et compagnons, martyrs",
+    "era": "XVIᵉ siècle",
+    "born": "Vers 1564, au Japon",
+    "died": "5 février 1597, à Nagasaki",
+    "story": "Paul Miki entre au séminaire jésuite en 1580, puis au noviciat d’Arie en août 1586. Quand les jésuites d’Osaka sont arrêtés, le 9 décembre 1596, il insiste pour les rejoindre. Le 5 février 1597, il renouvelle ses vœux, puis il est crucifié sur la colline de Nishizaka avec vingt-cinq autres chrétiens. Pie IX les canonise en 1862.",
+    "caution": "Le lieu de sa naissance varie selon les sources.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Paul_Miki" }
+    ]
+  },
+  "joseph_the_worker": {
+    "role": "Époux de la Vierge Marie",
+    "era": "Iᵉʳ siècle",
+    "died": "Iᵉʳ siècle, à Nazareth selon la tradition",
+    "patron": "Église universelle, charpentiers, travailleurs, pères de famille, bonne mort",
+    "story": "Joseph apparaît surtout dans les récits d’enfance des Évangiles de Matthieu et de Luc, écrits vers 85. Chef de la Sainte Famille, il est vénéré par les catholiques et les orthodoxes. Pie IX le proclame patron de l’Église universelle en 1870.",
+    "caution": "Les détails sur sa vie, comme sa mort à 111 ans, viennent de textes apocryphes, tels que l’Histoire de Joseph le charpentier.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Joseph_(père_de_Jésus)" }
+    ]
+  },
+  "athanasius_of_alexandria_bishop": {
+    "role": "Évêque d’Alexandrie, docteur de l’Église",
+    "era": "IVᵉ siècle",
+    "born": "Vers 296-300, en Égypte",
+    "died": "2 mai 373, à Alexandrie",
+    "story": "Athanase participe au concile de Nicée en 325 et succède à l’évêque Alexandre en 328. Défenseur de la foi de Nicée, il connaît au moins cinq exils, le premier en 335, à Trèves. Il reste évêque d’Alexandrie jusqu’à sa mort, en 373.",
+    "caution": "L’accusation d’avoir tué l’évêque Arsène s’est effondrée : celui-ci a été retrouvé vivant.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 20 juin 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070620.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Athanase_d'Alexandrie" }
+    ]
+  },
+  "philip_and_james_apostles": {
+    "role": "Apôtres",
+    "era": "Iᵉʳ siècle",
+    "died": "Vers 63 à Hiérapolis (Philippe) ; en 62 à Jérusalem (Jacques)",
+    "story": "Philippe, originaire de Bethsaïde, est l’un des Douze. Ses reliques sont déposées au VIᵉ siècle à la basilique des Saints-Apôtres, à Rome. Jacques, fils d’Alphée, dirige l’Église de Jérusalem. Selon Flavius Josèphe, il est lapidé en l’an 62 sur l’ordre du grand prêtre Anan.",
+    "caution": "L’identité de Jacques d’Alphée et de Jacques, frère du Seigneur, est débattue. La mort de Philippe, par crucifixion ou lapidation, varie selon les récits.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 6 septembre 2006 (Philippe)", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20060906.html" },
+      { "label": "Benoît XVI, audience du 28 juin 2006 (Jacques)", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20060628.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Philippe_(apôtre)" }
+    ]
+  },
+  "louise_de_marillac_religious": {
+    "role": "Religieuse, cofondatrice des Filles de la Charité",
+    "era": "XVIIᵉ siècle",
+    "born": "12 août 1591, à Ferrières-en-Brie",
+    "died": "15 mars 1660, à Paris",
+    "patron": "Œuvres sociales, travailleurs sociaux",
+    "story": "Mariée en 1613, Louise fonde avec saint Vincent de Paul les Filles de la Charité, le 29 novembre 1633. Elle prononce ses premiers vœux le 25 mars 1642. Elle est canonisée par Pie XI le 11 mars 1934, et Jean XXIII la donne pour patronne aux travailleurs sociaux en 1960.",
+    "caution": "Sa filiation reste incertaine : l’acte notarié qui la reconnaît à sa naissance ne nomme pas sa mère.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Louise_de_Marillac" }
+    ]
+  },
+  "john_of_avila_priest": {
+    "role": "Prêtre, docteur de l’Église",
+    "era": "XVIᵉ siècle",
+    "born": "6 janvier 1499, à Almodóvar del Campo (Espagne)",
+    "died": "10 mai 1569, à Montilla (Espagne)",
+    "patron": "Andalousie, clergé séculier espagnol",
+    "story": "Ordonné prêtre en 1525, Jean est dénoncé à l’Inquisition en 1531, puis jugé en 1533. Il s’installe à Baeza en 1540. Paul VI le canonise le 31 mai 1970, et Benoît XVI le proclame docteur de l’Église le 7 octobre 2012.",
+    "caution": "La révélation qu’il aurait eue pendant une corrida vient de la tradition.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_d'Avila" }
+    ]
+  },
+  "nereus_of_terracina_and_achilleus_of_terracina_martyrs": {
+    "role": "Martyrs à Rome",
+    "era": "Début du IVᵉ siècle",
+    "died": "Vers 304, à Rome",
+    "story": "Nérée et Achillée meurent martyrs à Rome sous Dioclétien. Le pape Damase leur consacre une inscription, dont des fragments ont été retrouvés en 1874. Leurs reliques sont transférées en 1597 à l’église Santi Nereo e Achilleo.",
+    "caution": "Leurs Actes, qui en font des eunuques de Domitille, n’ont aucune valeur historique.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Nérée_et_Achillée" }
+    ]
+  },
+  "pancras_of_rome_martyr": {
+    "role": "Martyr à Rome",
+    "era": "Début du IVᵉ siècle",
+    "born": "Vers 289-290 selon la tradition, en Phrygie",
+    "died": "304 selon la tradition, à Rome",
+    "patron": "Enfants, adolescents, gens de bonne foi",
+    "story": "Selon la tradition, Pancrace est décapité à Rome à 14 ans, sous Dioclétien. Une basilique lui est dédiée dès 604, et il est aussi connu comme l’un des saints de glace.",
+    "caution": "Son dialogue avec Dioclétien vient de La Légende dorée.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pancrace_de_Rome" }
+    ]
+  },
+  "matthias_apostle": {
+    "role": "Apôtre",
+    "era": "Iᵉʳ siècle",
+    "died": "Vers 64 selon une tradition",
+    "patron": "Charpentiers, bouchers, Trèves",
+    "story": "Selon les Actes des Apôtres, Matthias est choisi par tirage au sort pour prendre la place de Judas parmi les Douze. Ses reliques sont vénérées à l’abbaye Saint-Matthias de Trèves.",
+    "caution": "Le lieu et les circonstances de son martyre varient selon des récits tardifs.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Matthias_(apôtre)" }
+    ]
+  },
+  "isidore_the_farmer": {
+    "role": "Laboureur",
+    "era": "XIᵉ-XIIᵉ siècle",
+    "born": "Vers 1070, à Madrid",
+    "died": "Vers 1130, à Madrid",
+    "patron": "Madrid, paysans, agriculteurs",
+    "story": "Simple laboureur madrilène, Isidore est béatifié en 1619 et canonisé par Grégoire XV le 12 mars 1622, à la demande du roi Philippe III, guéri par son intercession.",
+    "caution": "Les anges conduisant sa charrue pendant sa prière et la fontaine jaillie de la sécheresse sont légendaires.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Isidore_le_Laboureur" }
+    ]
+  },
+  "john_i_pope": {
+    "role": "Pape, martyr",
+    "era": "Vᵉ-VIᵉ siècle",
+    "born": "Vers 470, en Toscane",
+    "died": "18 mai 526, à Ravenne",
+    "story": "Élu évêque de Rome le 13 août 523, Jean est le premier pape reçu à Constantinople. À son retour, il est arrêté par Théodoric et meurt de faim à Ravenne, ce qui le fait considérer comme martyr.",
+    "caution": "Les bulles qu’on lui attribue sont probablement apocryphes.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_Ier_(pape)" }
+    ]
+  },
+  "ivo_of_kermartin_priest": {
+    "role": "Prêtre, juge en Bretagne",
+    "era": "XIIIᵉ-XIVᵉ siècle",
+    "born": "Vers 1253, à Minihy-Tréguier",
+    "died": "19 mai 1303, à Minihy-Tréguier",
+    "patron": "Avocats, professions de justice, Bretagne",
+    "story": "Official du diocèse de Tréguier, Yves est ordonné prêtre en 1284 et abandonne sa charge en 1298. Une enquête sur sa sainteté s’ouvre en 1330, et Clément VI le canonise le 19 mai 1347.",
+    "caution": "L’anecdote célèbre du « son qui paye l’odeur » vient de Rabelais et ne figure pas dans l’enquête.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Yves_Hélory_de_Kermartin" }
+    ]
+  },
+  "bernardine_of_siena_priest": {
+    "role": "Franciscain, prédicateur",
+    "era": "XIVᵉ-XVᵉ siècle",
+    "born": "8 septembre 1380, à Massa Marittima (Italie)",
+    "died": "20 mai 1444, à L’Aquila",
+    "patron": "Prédicateurs, publicitaires",
+    "story": "Bernardin prend l’habit franciscain le 8 septembre 1402 et devient l’un des prédicateurs les plus célèbres de son temps. Il est convoqué à Rome en 1427. Il meurt à L’Aquila en 1444, et Nicolas V le canonise dès le 24 mai 1450.",
+    "caution": "Les « plus de deux mille guérisons » viennent de la tradition populaire.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Bernardin_de_Sienne" }
+    ]
+  },
+  "christopher_magallanes_priest_and_companions_martyrs": {
+    "role": "Prêtre et compagnons, martyrs mexicains",
+    "era": "XIXᵉ-XXᵉ siècle",
+    "born": "30 juillet 1869, à Totatiche (Mexique)",
+    "died": "25 mai 1927, à Colotlán (Mexique)",
+    "story": "Ordonné prêtre en 1899, Cristóbal ouvre en 1915 un séminaire clandestin à Totatiche. Arrêté le 21 mai 1927 alors qu’il va célébrer la messe, il est exécuté sans procès quatre jours plus tard. Jean-Paul II le canonise avec ses compagnons le 21 mai 2000.",
+    "caution": "Il a été accusé à tort de fomenter la rébellion des Cristeros.",
+    "sources": [
+      { "label": "Wikipédia en anglais", "url": "https://en.wikipedia.org/wiki/Christopher_Magallanes" }
+    ]
+  },
+  "rita_of_cascia_religious": {
+    "role": "Veuve, religieuse augustine",
+    "era": "XIVᵉ-XVᵉ siècle",
+    "born": "Mai 1381, à Roccaporena (Italie)",
+    "died": "22 mai 1457, à Cascia (Italie)",
+    "patron": "Causes désespérées, couples en difficulté",
+    "story": "Mariée en 1399, Rita perd son mari, assassiné en 1412. Elle demande son entrée au monastère vers 1420 et devient augustine à Cascia. Elle y meurt à 76 ans, et Léon XIII la canonise le 24 mai 1900.",
+    "caution": "Les abeilles blanches au berceau, l’épine au front et la rose en plein hiver sont des récits hagiographiques.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Rita_de_Cascia" }
+    ]
+  },
+  "bede_the_venerable_priest": {
+    "role": "Moine, docteur de l’Église",
+    "era": "VIIᵉ-VIIIᵉ siècle",
+    "born": "Vers 672-673, en Northumbrie",
+    "died": "26 mai 735, à Jarrow",
+    "patron": "Historiens, écrivains anglais",
+    "story": "Moine bénédictin en Northumbrie, Bède est diacre vers 692 et commence à écrire vers 701. Il meurt le 26 mai 735, jour de l’Ascension. Léon XIII le proclame docteur de l’Église en 1899.",
+    "caution": "Le poème qu’on lui attribue sur son lit de mort est d’attribution douteuse.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 18 février 2009", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2009/documents/hf_ben-xvi_aud_20090218.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Bède_le_Vénérable" }
+    ]
+  },
+  "gregory_vii_pope": {
+    "role": "Moine, pape",
+    "era": "XIᵉ siècle",
+    "born": "Vers 1020-1025, à Sovana (Toscane)",
+    "died": "25 mai 1085, à Salerne",
+    "story": "Moine bénédictin, il est élu pape le 22 avril 1073 et intronisé le 30 juin. Il meurt en exil à Salerne, en 1085.",
+    "caution": "Son père charpentier, selon certaines sources, peut refléter un parallèle voulu avec le Christ.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Grégoire_VII" }
+    ]
+  },
+  "mary_magdalene_de_pazzi_virgin": {
+    "role": "Carmélite, mystique",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "2 avril 1566, à Florence",
+    "died": "25 mai 1607, à Florence",
+    "story": "Entrée au Carmel le 27 novembre 1582, Marie-Madeleine traverse de 1585 à 1590 une longue sécheresse spirituelle. Sous-prieure en 1604, elle meurt à 41 ans. Clément IX la canonise en 1669.",
+    "caution": "Les quarante jours de ravissement sont rapportés par les récits de sa vie.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Marie-Madeleine_de_Pazzi" }
+    ]
+  },
+  "philip_neri_priest": {
+    "role": "Prêtre, fondateur de l’Oratoire",
+    "era": "XVIᵉ siècle",
+    "born": "21 juillet 1515, à Florence",
+    "died": "26 mai 1595, à Rome",
+    "patron": "Rome, jeunes",
+    "story": "Installé à Rome, Philippe y crée en 1548 une confrérie d’accueil des pèlerins. Ordonné prêtre le 23 mai 1551, il fonde l’Oratoire, reconnu par Grégoire XIII en 1575. Grégoire XV le canonise le 12 mars 1622.",
+    "caution": "Le globe de feu de 1544, la résurrection du prince Massimo et les lévitations relèvent de la tradition.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Philippe_Néri" }
+    ]
+  },
+  "augustine_of_canterbury_bishop": {
+    "role": "Moine, premier archevêque de Cantorbéry",
+    "era": "VIᵉ-VIIᵉ siècle",
+    "born": "VIᵉ siècle, à Rome",
+    "died": "Un 26 mai, entre 604 et 609, à Cantorbéry",
+    "story": "Choisi en 595 pour conduire la mission voulue par Grégoire le Grand, Augustin arrive dans le Kent en 597 et devient le premier archevêque de Cantorbéry. Il reçoit le pallium en 601, et des évêchés sont créés à Londres et à Rochester en 604.",
+    "caution": "Le baptême du roi Æthelberht le 2 juin 597 est une tradition tardive, et les 10 000 conversions citées sont peut-être exagérées.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Augustin_de_Cantorbéry" }
+    ]
+  },
+  "paul_vi_pope": {
+    "role": "Pape",
+    "era": "XXᵉ siècle",
+    "born": "26 septembre 1897, à Concesio (Italie)",
+    "died": "6 août 1978, à Castel Gandolfo",
+    "story": "Ordonné prêtre le 29 mai 1920, Giovanni Battista Montini devient archevêque de Milan le 12 décembre 1954 et cardinal le 15 décembre 1958. Élu pape le 21 juin 1963, il est béatifié le 19 octobre 2014 et canonisé par le pape François le 14 octobre 2018.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Paul_VI" }
+    ]
+  },
+  "joan_of_arc_virgin": {
+    "role": "Vierge, co-patronne de la France",
+    "era": "XVᵉ siècle",
+    "born": "Vers 1412, à Domrémy",
+    "died": "30 mai 1431, à Rouen",
+    "patron": "France",
+    "story": "Jeune paysanne de Domrémy, Jeanne libère Orléans le 8 mai 1429 et fait sacrer Charles VII à Reims le 17 juillet. Capturée en 1430 et vendue aux Anglais, elle meurt sur le bûcher à Rouen en 1431, à 19 ans. Sa condamnation est annulée le 7 juillet 1456, et Benoît XV la canonise en 1920.",
+    "caution": "Jeanne affirme avoir reçu les voix de saint Michel, de sainte Marguerite et de sainte Catherine.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 26 janvier 2011", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2011/documents/hf_ben-xvi_aud_20110126.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jeanne_d'Arc" }
+    ]
+  },
+  "justin_martyr": {
+    "role": "Philosophe, martyr",
+    "era": "IIᵉ siècle",
+    "born": "Vers 100, à Flavia Neapolis (Naplouse)",
+    "died": "Vers 165, à Rome",
+    "patron": "Philosophes",
+    "story": "Philosophe converti peu après la révolte de Bar Kokhba (132-135), Justin ouvre une école à Rome et écrit sa Première Apologie vers 155. Il est décapité vers 165.",
+    "caution": "Sa rencontre avec un vieillard, à l’origine de sa conversion, est peut-être symbolique.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 21 mars 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070321.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Justin_de_Naplouse" }
+    ]
+  },
+  "marcellinus_of_rome_and_peter_the_exorcist_martyrs": {
+    "role": "Prêtre et exorciste, martyrs à Rome",
+    "era": "Début du IVᵉ siècle",
+    "died": "Vers 304, à Rome",
+    "story": "Marcellin, prêtre, et Pierre, exorciste, sont arrêtés sous Dioclétien et décapités. Le pape Damase témoigne de leur exécution à la fin du IVᵉ siècle. En 827, Grégoire IV envoie leurs reliques à Éginhard.",
+    "caution": "Leur Passion est jugée peu fiable par les Bollandistes.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Marcellin_et_Pierre" }
+    ]
+  },
+  "pothinus_of_lyon_bishop_blandina_of_lyon_virgin_and_companions_martyrs": {
+    "role": "Martyrs de Lyon",
+    "era": "IIᵉ siècle",
+    "died": "177, à Lyon",
+    "story": "Vers 177, à Lugdunum, un groupe de chrétiens, le premier connu en Gaule, est mis à mort. Parmi eux, Pothin, âgé de plus de quatre-vingt-dix ans, meurt en prison après deux jours, et Blandine figure parmi les victimes. On a pu reconstituer une liste de 48 noms.",
+    "caution": "Une thèse de 1964 a proposé de situer les faits en Phrygie, et l’attribution de la lettre sur ces événements à Irénée est incertaine.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Martyrs_de_Lyon" }
+    ]
+  },
+  "charles_lwanga_and_companions_martyrs": {
+    "role": "Martyrs de l’Ouganda",
+    "era": "XIXᵉ siècle",
+    "died": "Entre novembre 1885 et janvier 1887, en Ouganda",
+    "story": "Après l’arrivée des Pères Blancs en 1879, 22 catholiques, dont Charles Lwanga, et 23 anglicans sont tués en haine de la foi. Joseph Mkasa Balikuddembé meurt le premier, le 15 novembre 1885. Les catholiques sont canonisés par Paul VI le 18 octobre 1964.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Martyrs_de_l'Ouganda" }
+    ]
+  },
+  "clotilde_of_burgundy": {
+    "role": "Reine des Francs",
+    "era": "Vᵉ-VIᵉ siècle",
+    "born": "Vers 474-475",
+    "died": "Vers 545, à Tours",
+    "patron": "Mariées, veuves, enfants adoptés, notaires",
+    "story": "Princesse burgonde, Clotilde épouse le roi Clovis. Le baptême de celui-ci a lieu entre 496 et 499. Veuve depuis 511, elle se retire ensuite à Saint-Martin de Tours, où elle meurt vers 545.",
+    "caution": "La date de son mariage, celle du baptême de Clovis et le récit de la mort de ses parents par Grégoire de Tours sont discutés.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Clotilde_(épouse_de_Clovis_Ier)" }
+    ]
+  },
+  "boniface_of_mainz_bishop": {
+    "role": "Moine, évêque, missionnaire, martyr",
+    "era": "VIIᵉ-VIIIᵉ siècle",
+    "born": "Vers 675-680, à Crediton (Angleterre)",
+    "died": "5 juin 754, à Dokkum (Frise)",
+    "patron": "Brasseurs, tailleurs",
+    "story": "Moine bénédictin venu d’Angleterre, Boniface mène une première mission en Frise en 716. Il est ordonné évêque le 30 novembre 722, réunit un concile germanique en 742 et fonde l’abbaye de Fulda vers cette époque. Il est assassiné à Dokkum en 754.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 11 mars 2009", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2009/documents/hf_ben-xvi_aud_20090311.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Boniface_de_Mayence" }
+    ]
+  },
+  "norbert_of_xanten_bishop": {
+    "role": "Fondateur des Prémontrés, archevêque de Magdebourg",
+    "era": "XIᵉ-XIIᵉ siècle",
+    "born": "Vers 1080, à Gennep",
+    "died": "6 juin 1134, à Magdebourg",
+    "story": "Prêtre itinérant, Norbert rencontre le pape Gélase II à Saint-Gilles en 1118. Il fonde l’ordre des Prémontrés, approuvé par la bulle du 16 février 1126, puis devient archevêque de Magdebourg. Grégoire XIII le canonise le 28 juillet 1582.",
+    "caution": "La foudre tombée sur son cheval relève de la légende, et sa date de naissance n’est pas assurée.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Norbert_de_Xanten" }
+    ]
+  },
+  "ephrem_the_syrian_deacon": {
+    "role": "Diacre, théologien, docteur de l’Église",
+    "era": "IVᵉ siècle",
+    "born": "Vers 306, à Nisibe",
+    "died": "9 juin 373, à Édesse",
+    "story": "Né à Nisibe, Éphrem y vit les sièges de la ville, avant de s’exiler à Édesse en 363. Diacre de langue syriaque, grand théologien, il est reconnu docteur de l’Église en 1920.",
+    "caution": "Son père prêtre païen vient d’hagiographes tardifs. Benoît XVI doute qu’il ait été moine.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 28 novembre 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20071128.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Éphrem_le_Syrien" }
+    ]
+  },
+  "barnabas_apostle": {
+    "role": "Apôtre au sens large, compagnon de Paul",
+    "era": "Iᵉʳ siècle",
+    "born": "Fin du Iᵉʳ siècle av. J.-C., à Salamine de Chypre",
+    "died": "Vers 61 selon la tradition, à Salamine",
+    "patron": "Chypre, Antioche",
+    "story": "Juif de la tribu de Lévi, Barnabé vend un champ au profit de la communauté, selon les Actes. Il part en mission à Antioche avec Paul et prend part au concile de Jérusalem. On découvre son tombeau au Vᵉ siècle.",
+    "caution": "Benoît XVI note qu’on perd ses traces vers 49. Son martyre et ses circonstances varient selon les récits.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 31 janvier 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070131.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Barnabé" }
+    ]
+  },
+  "anthony_of_padua_priest": {
+    "role": "Franciscain, docteur de l’Église",
+    "era": "XIIᵉ-XIIIᵉ siècle",
+    "born": "Vers 1195, à Lisbonne",
+    "died": "13 juin 1231, près de Padoue",
+    "patron": "Portugal, marins, pauvres, objets perdus",
+    "story": "Chanoine augustin à Lisbonne, Antoine rejoint les franciscains après 1220 et participe au chapitre d’Assise en 1221. Grand prédicateur, il devient supérieur provincial d’Italie du Nord en 1227. Il meurt à 36 ans, et Grégoire IX le canonise dès le 30 mai 1232.",
+    "caution": "Le sermon aux poissons de Rimini vient des Fioretti.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 10 février 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20100210.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Antoine_de_Padoue" }
+    ]
+  },
+  "romuald_of_ravenna_abbot": {
+    "role": "Moine, fondateur des Camaldules",
+    "era": "Xᵉ-XIᵉ siècle",
+    "born": "Vers 951, à Ravenne",
+    "died": "19 juin 1027, au Val di Castro",
+    "story": "Moine bénédictin, Romuald part en France en 978 avec le doge Pietro Orseolo. Il fonde Camaldoli en 1012, berceau de l’ordre camaldule. Clément VIII le canonise en 1595.",
+    "caution": "Il aurait simulé la folie pour échapper à un complot.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Romuald_de_Ravenne" }
+    ]
+  },
+  "aloysius_gonzaga_religious": {
+    "role": "Jésuite",
+    "era": "XVIᵉ siècle",
+    "born": "9 mars 1568, à Castiglione delle Stiviere (Italie)",
+    "died": "21 juin 1591, à Rome",
+    "patron": "Jeunesse, étudiants, personnes atteintes du sida",
+    "story": "Fils de prince, Louis est page à la cour de Philippe II en 1581. Le 2 novembre 1585, il renonce à ses droits et devient jésuite, avec ses vœux en 1587. Il meurt à 23 ans, de la peste contractée au service des malades. Benoît XIII le canonise le 26 avril 1726.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Louis_de_Gonzague" }
+    ]
+  },
+  "paulinus_of_nola_bishop": {
+    "role": "Aristocrate, moine, évêque de Nole",
+    "era": "IVᵉ-Vᵉ siècle",
+    "born": "Vers 353, à Bordeaux",
+    "died": "22 juin 431, à Nole (Italie)",
+    "patron": "Jardiniers, meuniers",
+    "story": "Aristocrate et consul en 378, Paulin est baptisé à Bordeaux en 389, puis ordonné à Barcelone à Noël 393 ou 394. Il s’établit à Nole, où il construit un ensemble autour du tombeau de saint Félix, et en devient évêque entre 408 et 413.",
+    "caution": "La toile d’araignée qui l’aurait caché est légendaire.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 12 décembre 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20071212.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Paulin_de_Nole" }
+    ]
+  },
+  "john_fisher_bishop_and_thomas_more_martyrs": {
+    "role": "Évêque et homme d’État, martyrs",
+    "era": "XVIᵉ siècle",
+    "born": "Vers 1469 à Beverley (Jean Fisher) ; 7 février 1478 à Londres (Thomas More)",
+    "died": "22 juin 1535 (Fisher) et 6 juillet 1535 (More), à Tower Hill",
+    "story": "Évêque de Rochester depuis 1504, Jean Fisher est emprisonné à la Tour en 1534 et créé cardinal le 20 mai 1535 peu avant son exécution. Juriste et humaniste, Thomas More est lord chancelier d’octobre 1529 à mai 1532, puis démissionne. Tous deux sont exécutés en 1535. Pie XI les canonise le 19 mai 1935.",
+    "sources": [
+      { "label": "Wikipédia (Fisher)", "url": "https://fr.wikipedia.org/wiki/John_Fisher" },
+      { "label": "Wikipédia (More)", "url": "https://fr.wikipedia.org/wiki/Thomas_More" }
+    ]
+  },
+  "nativity_of_john_the_baptist": {
+    "role": "Prophète, précurseur du Christ",
+    "era": "Iᵉʳ siècle",
+    "born": "Dernières décennies av. J.-C., lieu inconnu",
+    "died": "Vers 28-29, décapité",
+    "patron": "Florence, Gênes, Turin, Québec, Jordanie",
+    "story": "Prédicateur juif ascète, Jean baptise et appelle à la conversion. Flavius Josèphe atteste son existence. Il est arrêté par Hérode Antipas et décapité. L’Église célèbre sa naissance le 24 juin, six mois avant Noël, et son martyre le 29 août.",
+    "caution": "De grandes zones d’ombre demeurent sur sa vie.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_le_Baptiste" }
+    ]
+  },
+  "passion_of_saint_john_the_baptist": {
+    "role": "Prophète, précurseur du Christ",
+    "era": "Iᵉʳ siècle",
+    "born": "Dernières décennies av. J.-C., lieu inconnu",
+    "died": "Vers 28-29, décapité",
+    "patron": "Florence, Gênes, Turin, Québec, Jordanie",
+    "story": "Prédicateur juif ascète, Jean baptise et appelle à la conversion. Flavius Josèphe atteste son existence. Il est arrêté par Hérode Antipas et décapité. L’Église célèbre sa naissance le 24 juin, six mois avant Noël, et son martyre le 29 août.",
+    "caution": "De grandes zones d’ombre demeurent sur sa vie.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_le_Baptiste" }
+    ]
+  },
+  "cyril_of_alexandria_bishop": {
+    "role": "Patriarche d’Alexandrie, docteur de l’Église",
+    "era": "IVᵉ-Vᵉ siècle",
+    "born": "Vers 370-380",
+    "died": "27 juin 444",
+    "story": "Patriarche d’Alexandrie à partir de 412, Cyrille joue un rôle central au concile d’Éphèse en 431 et s’accorde en 433 avec Jean d’Antioche. Léon XIII le proclame docteur de l’Église en 1882.",
+    "caution": "Son action est controversée : mesures contre les juifs et mise en cause dans le meurtre d’Hypatie en 415, selon Socrate le Scolastique.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 3 octobre 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20071003.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Cyrille_d'Alexandrie" }
+    ]
+  },
+  "irenaeus_of_lyon_bishop": {
+    "role": "Évêque de Lyon, docteur de l’Église",
+    "era": "IIᵉ-IIIᵉ siècle",
+    "born": "Vers 122-140, à Smyrne",
+    "died": "Vers 202, à Lyon",
+    "patron": "Lyon",
+    "story": "Originaire de Smyrne, Irénée arrive en Occident au début des années 160 et devient évêque de Lyon après la persécution de 177. Vers 185, il rédige Contre les hérésies. Il intervient auprès du pape Victor. Le pape François le proclame docteur de l’Église le 21 janvier 2022.",
+    "caution": "Son martyre n’est rapporté qu’à partir de Grégoire de Tours. Ses dates de naissance et de mort restent incertaines.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 28 mars 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070328.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Irénée_de_Lyon" }
+    ]
+  },
+  "peter_and_paul_apostles": {
+    "role": "Apôtres",
+    "era": "Iᵉʳ siècle",
+    "born": "Tournant de notre ère, en Galilée (Pierre) ; début du Iᵉʳ siècle, probablement à Tarse (Paul)",
+    "died": "Entre 64 et 68, à Rome",
+    "patron": "Pêcheurs, maçons (Pierre)",
+    "story": "Pêcheur de Galilée, Pierre devient le chef des Douze ; l’Église catholique voit en lui le premier pape. Paul, formé par Gamaliel, rencontre le Christ ressuscité sur le chemin de Damas et devient l’apôtre des nations. Selon Eusèbe, Pierre est crucifié et Paul décapité à Rome, sous Néron.",
+    "caution": "La vie de Pierre reste peu documentée, et la primauté que lui reconnaît l’Église catholique est contestée par d’autres confessions.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 7 juin 2006", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20060607.html" },
+      { "label": "Wikipédia (Pierre)", "url": "https://fr.wikipedia.org/wiki/Pierre_(apôtre)" },
+      { "label": "Wikipédia (Paul)", "url": "https://fr.wikipedia.org/wiki/Paul_de_Tarse" }
+    ]
+  },
+  "first_martyrs_of_the_holy_roman_church": {
+    "role": "Martyrs de Rome",
+    "era": "Iᵉʳ siècle",
+    "died": "En 64, à Rome",
+    "story": "Après l’incendie de Rome, en 64, Néron fait des chrétiens ses boucs émissaires, comme le rapporte l’historien Tacite. Beaucoup sont mis à mort, et l’Église honore ces premiers martyrs le 30 juin.",
+    "caution": "Leur nombre est inconnu : moins de 300 pour certains, 977 selon un texte du Vᵉ siècle.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Persécution_de_Néron" }
+    ]
+  },
+  "thomas_apostle": {
+    "role": "Apôtre",
+    "era": "Iᵉʳ siècle",
+    "born": "Iᵉʳ siècle, en Galilée",
+    "died": "Vers 72 selon la tradition, à Méliapour (Inde)",
+    "patron": "Maçons, architectes",
+    "story": "L’un des Douze, Thomas part selon une antique tradition évangéliser la Syrie et la Perse, puis l’Inde, où il serait arrivé en 52.",
+    "caution": "Sa mission en Inde repose sur la tradition et les Actes de Thomas, et sa mort à Méliapour reste hypothétique.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 27 septembre 2006", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20060927.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Thomas_(apôtre)" }
+    ]
+  },
+  "elizabeth_of_portugal": {
+    "role": "Reine de Portugal",
+    "era": "XIIIᵉ-XIVᵉ siècle",
+    "born": "4 janvier 1271, à Saragosse",
+    "died": "4 juillet 1336",
+    "story": "Élisabeth épouse Denis Iᵉʳ de Portugal le 24 juin 1282. Elle est béatifiée en 1516 et canonisée par Urbain VIII le 25 mai 1625.",
+    "caution": "L’épisode des roses est présenté comme légendaire ou historique. Les sources donnent Estremoz ou Coimbra comme lieu de sa mort.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Élisabeth_de_Portugal" }
+    ]
+  },
+  "anthony_zaccaria_priest": {
+    "role": "Prêtre, fondateur des Barnabites",
+    "era": "XVIᵉ siècle",
+    "born": "1502, à Crémone",
+    "died": "5 juillet 1539, à Crémone",
+    "patron": "Barnabites",
+    "story": "Ordonné prêtre en 1528, Antoine-Marie fonde vers 1530 à Milan les Clercs réguliers de Saint-Paul, ou Barnabites. Accusé d’hérésie, il est blanchi à deux reprises. Il meurt à 36 ou 37 ans. Léon XIII le canonise le 15 mai 1897.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Antoine-Marie_Zaccaria" }
+    ]
+  },
+  "maria_goretti_virgin": {
+    "role": "Vierge et martyre",
+    "era": "XIXᵉ-XXᵉ siècle",
+    "born": "16 octobre 1890, à Corinaldo (Italie)",
+    "died": "6 juillet 1902, à Nettuno (Italie)",
+    "story": "Agressée le 5 juillet 1902 par Alessandro Serenelli, Maria meurt le lendemain, à 11 ans. Serenelli est condamné à trente ans de prison, libéré en 1929, et se repent publiquement à Noël 1934. Pie XII la canonise le 24 juin 1950.",
+    "caution": "Les sources divergent sur certains détails de sa biographie et sur l’arme du crime.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Maria_Goretti" }
+    ]
+  },
+  "augustine_zhao_rong_priest_and_companions_martyrs": {
+    "role": "Prêtre et compagnons, martyrs de Chine",
+    "era": "XVIIᵉ-XXᵉ siècle",
+    "died": "Entre 1648 et 1930, en Chine",
+    "story": "Cette fête rassemble 120 martyrs : 87 Chinois et 33 missionnaires européens, dont 13 Français. Le premier, François Fernández de Capillas, est décapité à Fuzhou en 1648 ; les derniers, Louis Versiglia et Callisto Caravario, meurent en 1930. Jean-Paul II les canonise le 1ᵉʳ octobre 2000.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Martyrs_de_Chine" }
+    ]
+  },
+  "benedict_of_nursia_abbot": {
+    "role": "Abbé, père des moines d’Occident",
+    "era": "Vᵉ-VIᵉ siècle",
+    "born": "Vers 480, à Nursie (Italie)",
+    "died": "21 mars 547, au Mont-Cassin",
+    "patron": "Europe, moines, agriculteurs",
+    "story": "Venu à Rome vers 495, Benoît passe trois ans en ermite à Subiaco, puis devient abbé. En 529, il part pour le Mont-Cassin, où il fonde son monastère. Sa Règle marque toute la vie monastique d’Occident. Paul VI le proclame patron de l’Europe le 24 octobre 1964.",
+    "caution": "Le crible réparé à Enfide et la coupe brisée à Vicovaro viennent de récits hagiographiques.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 9 avril 2008", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2008/documents/hf_ben-xvi_aud_20080409.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Benoît_de_Nursie" }
+    ]
+  },
+  "henry_ii_emperor": {
+    "role": "Empereur germanique",
+    "era": "Xᵉ-XIᵉ siècle",
+    "born": "Mai 973, à Abbach (Bavière)",
+    "died": "13 juillet 1024, à Grone (Allemagne)",
+    "story": "Élu roi de Germanie en 1002, Henri fonde l’évêché de Bamberg en 1007 et est couronné empereur par Benoît VIII le 14 février 1014. Il est canonisé par Eugène III le 4 mars 1146.",
+    "caution": "Son mariage sans enfant avec Cunégonde a été tenu pour virginal, mais cela relève de la tradition.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Henri_II_(empereur_du_Saint-Empire)" }
+    ]
+  },
+  "camillus_de_lellis_priest": {
+    "role": "Prêtre, fondateur",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "25 mai 1550, à Bucchianico (Italie)",
+    "died": "14 juillet 1614, à Rome",
+    "patron": "Malades, hôpitaux, infirmiers",
+    "story": "Camille fonde en 1585 les Pères de la Bonne Mort, confirmés par Sixte Quint en 1586 et érigés en ordre religieux par Grégoire XIV en 1591. Il quitte le généralat en 1607. Benoît XIV le canonise en 1746.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Camille_de_Lellis" }
+    ]
+  },
+  "bonaventure_of_bagnoregio_bishop": {
+    "role": "Franciscain, cardinal, docteur de l’Église",
+    "era": "XIIIᵉ siècle",
+    "born": "Vers 1217-1221, à Bagnoregio (Italie)",
+    "died": "15 juillet 1274, à Lyon",
+    "story": "Né Giovanni da Fidanza, Bonaventure étudie à Paris, entre chez les franciscains vers 1243 et devient ministre général de l’ordre en 1257. Cardinal-évêque d’Albano en 1273, il meurt pendant le concile de Lyon. Sixte IV le canonise le 14 avril 1482.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 3 mars 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20100303.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Bonaventure_de_Bagnoregio" }
+    ]
+  },
+  "apollinaris_of_ravenna_bishop": {
+    "role": "Évêque et martyr",
+    "era": "Iᵉʳ-IIᵉ siècle",
+    "died": "IIᵉ siècle, à Ravenne",
+    "patron": "Ravenne, Émilie-Romagne, Aix-la-Chapelle",
+    "story": "Apollinaire est honoré comme le premier évêque de Ravenne. Il figure au début du Vᵉ siècle dans le martyrologe hiéronymien, et Pierre Chrysologue le cite dans l’un de ses sermons.",
+    "caution": "Sa Passion, rédigée au VIIᵉ siècle, a une faible valeur historique, y compris son envoi par saint Pierre et ses miracles.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Apollinaire_de_Ravenne" }
+    ]
+  },
+  "lawrence_of_brindisi_priest": {
+    "role": "Capucin, docteur de l’Église",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "22 juillet 1559, à Brindisi",
+    "died": "22 juillet 1619, à Lisbonne",
+    "patron": "Brindisi",
+    "story": "Né Jules César, Laurent entre chez les capucins vers 1575-1576 et est ordonné prêtre le 18 décembre 1582. Ministre général de l’ordre de 1602 à 1605, il meurt à Lisbonne en 1619. Léon XIII le canonise en 1881, et Jean XXIII le proclame docteur de l’Église en 1959.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 23 mars 2011", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2011/documents/hf_ben-xvi_aud_20110323.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Laurent_de_Brindisi" }
+    ]
+  },
+  "mary_magdalene": {
+    "role": "Disciple du Christ, apôtre des apôtres",
+    "era": "Iᵉʳ siècle",
+    "born": "Iᵉʳ siècle, sans doute à Magdala",
+    "died": "Iᵉʳ siècle",
+    "story": "Selon Luc, Marie de Magdala est délivrée de sept démons et suit Jésus. Le pape François lui reconnaît en 2016 le titre d’apôtre des apôtres et élève sa mémoire en fête.",
+    "caution": "Son identification à la pécheresse et à Marie de Béthanie, remontant à Grégoire le Grand, a été abandonnée au XXᵉ siècle. Sa retraite à la Sainte-Baume relève de la tradition.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Marie_de_Magdala" }
+    ]
+  },
+  "bridget_of_sweden_religious": {
+    "role": "Veuve, fondatrice, co-patronne de l’Europe",
+    "era": "XIVᵉ siècle",
+    "born": "1303, à Finsta (Suède)",
+    "died": "23 juillet 1373, à Rome",
+    "patron": "Suède, pèlerins, co-patronne de l’Europe",
+    "story": "Veuve en 1344, Brigitte fonde Vadstena en 1346, puis s’installe à Rome en 1349. Boniface IX la canonise le 7 octobre 1391, et Jean-Paul II la proclame co-patronne de l’Europe en 1999.",
+    "caution": "Sa vision de la Nativité à Bethléem vient de ses propres écrits.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 27 octobre 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20101027.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Brigitte_de_Suède" }
+    ]
+  },
+  "sharbel_makhluf_priest": {
+    "role": "Moine et prêtre maronite",
+    "era": "XIXᵉ siècle",
+    "born": "8 mai 1828, à Bqaa Kafra (Liban)",
+    "died": "24 décembre 1898, à Annaya (Liban)",
+    "patron": "Liban",
+    "story": "Né Youssef Antoun Makhlouf, Charbel est ordonné prêtre le 23 juillet 1859 à Bkerké. En 1875, il se retire à l’ermitage des Saints-Pierre-et-Paul, où il meurt. Paul VI le canonise le 9 octobre 1977.",
+    "caution": "La lumière sur sa tombe et l’exsudation de son corps relèvent de récits de dévotion.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Charbel_Makhlouf" }
+    ]
+  },
+  "james_apostle": {
+    "role": "Apôtre",
+    "era": "Iᵉʳ siècle",
+    "born": "Début du Iᵉʳ siècle, en Galilée",
+    "died": "Vers 44, à Jérusalem",
+    "patron": "Espagne, Galice, pèlerins, cavaliers",
+    "story": "Fils de Zébédée, Jacques est décapité à Jérusalem sur l’ordre d’Hérode Agrippa, selon les Actes. Vers 813, une tombe présumée est découverte à Compostelle, qui devient un immense lieu de pèlerinage.",
+    "caution": "La prédication de Jacques en Espagne et le transport de son corps en barque jusqu’à Padrón relèvent de la tradition.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 21 juin 2006", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20060621.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jacques_de_Zébédée" }
+    ]
+  },
+  "joachim_and_anne_parents_of_mary": {
+    "role": "Parents de la Vierge Marie",
+    "era": "Iᵉʳ siècle av. J.-C.",
+    "patron": "Bretagne, Québec, grands-mères, veuves, couturières",
+    "story": "Les Évangiles ne parlent pas d’eux : leurs noms viennent du Protévangile de Jacques, un écrit du IIᵉ siècle. Anne, très vénérée en Bretagne et au Québec, est honorée avec Joachim le 26 juillet.",
+    "caution": "Ce que l’on raconte d’eux, comme la rencontre à la Porte dorée, vient de récits apocryphes.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Anne_(mère_de_Marie)" }
+    ]
+  },
+  "martha_of_bethany_mary_of_bethany_and_lazarus_of_bethany": {
+    "role": "Amis et disciples du Christ",
+    "era": "Iᵉʳ siècle",
+    "born": "Béthanie",
+    "patron": "Tarascon (Marthe)",
+    "story": "Marthe, Marie et Lazare sont les amis de Jésus à Béthanie, dont parlent les Évangiles. L’Église les fête ensemble le 29 juillet depuis janvier 2021.",
+    "caution": "Le débarquement aux Saintes-Maries-de-la-Mer et la Tarasque maîtrisée par Marthe appartiennent à la légende provençale.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Marthe_de_Béthanie" }
+    ]
+  },
+  "peter_chrysologus_bishop": {
+    "role": "Évêque de Ravenne, docteur de l’Église",
+    "era": "Vᵉ siècle",
+    "born": "Vers 380 ou vers 400-406, à Imola",
+    "died": "Vers 450, à Imola",
+    "story": "Évêque de Ravenne en 433, désigné par Sixte III, Pierre écrit à Eutychès en 448. Benoît XIII le proclame docteur de l’Église en 1729.",
+    "caution": "Le choix par saint Pierre et saint Apollinaire en songe est une légende, et son surnom n’apparaît que plus tard.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pierre_Chrysologue" }
+    ]
+  },
+  "ignatius_of_loyola_priest": {
+    "role": "Prêtre, fondateur de la Compagnie de Jésus",
+    "era": "XVIᵉ siècle",
+    "born": "Vers 1491, à Loyola (Pays basque)",
+    "died": "31 juillet 1556, à Rome",
+    "story": "Entré à la cour de Castille en 1506, Ignace est blessé au siège de Pampelune le 20 mai 1521. Sa Compagnie de Jésus est reconnue par Paul III en 1540. Grégoire XV le canonise le 12 mars 1622.",
+    "caution": "Son année de naissance est incertaine : 1491, 1493 ou 1495.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Ignace_de_Loyola" }
+    ]
+  },
+  "alphonsus_mary_liguori_bishop": {
+    "role": "Évêque, fondateur, docteur de l’Église",
+    "era": "XVIIIᵉ siècle",
+    "born": "27 septembre 1696, près de Naples",
+    "died": "1ᵉʳ août 1787, à Nocera dei Pagani",
+    "patron": "Confesseurs, moralistes",
+    "story": "Brillant avocat, Alphonse se convertit en 1723 et devient prêtre en 1726. Il fonde les Rédemptoristes en 1732 et devient évêque de Sant’Agata dei Goti en 1762, charge qu’il quitte en 1775. Canonisé le 26 mai 1839, il est proclamé docteur de l’Église en 1871.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 30 mars 2011", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2011/documents/hf_ben-xvi_aud_20110330.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Alphonse_de_Liguori" }
+    ]
+  },
+  "eusebius_of_vercelli_bishop": {
+    "role": "Évêque de Verceil",
+    "era": "IVᵉ siècle",
+    "born": "Début du IVᵉ siècle, en Sardaigne",
+    "died": "1ᵉʳ août 371, à Verceil",
+    "patron": "Archidiocèse de Verceil",
+    "story": "Évêque de Verceil dans les années 340, Eusèbe vit en communauté avec son clergé. Exilé en Orient sous Constance II, il est à Scythopolis entre 355 et 360. Libéré après la mort de l’empereur en 361, il prend part en 362 au concile d’Alexandrie.",
+    "caution": "Wikipédia situe sa naissance en 283, alors que Benoît XVI la place au début du IVᵉ siècle.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 17 octobre 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20071017.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Eusèbe_de_Verceil" }
+    ]
+  },
+  "peter_julian_eymard_priest": {
+    "role": "Prêtre, fondateur",
+    "era": "XIXᵉ siècle",
+    "born": "4 février 1811, à La Mure",
+    "died": "1ᵉʳ août 1868, à La Mure",
+    "story": "Prêtre du diocèse de Grenoble en 1834, Pierre-Julien entre chez les maristes en 1839. Il fonde en 1856 la congrégation du Saint-Sacrement, approuvée par Pie IX en 1863. Jean XXIII le canonise le 9 décembre 1962.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pierre-Julien_Eymard" }
+    ]
+  },
+  "john_mary_vianney_priest": {
+    "role": "Prêtre, curé d’Ars",
+    "era": "XVIIIᵉ-XIXᵉ siècle",
+    "born": "8 mai 1786, à Dardilly",
+    "died": "4 août 1859, à Ars-sur-Formans",
+    "patron": "Curés",
+    "story": "Fils de cultivateurs, Jean-Marie est ordonné prêtre le 13 août 1815. Il arrive à Ars en 1818 et y reste curé pendant 41 ans. Il y ouvre la maison de la Providence en 1824. Pie XI le canonise le 31 mai 1925 et le proclame patron des curés en 1929.",
+    "caution": "Sa désertion de 1809-1810 est racontée de deux façons : volontaire ou non.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean-Marie_Vianney" }
+    ]
+  },
+  "sixtus_ii_pope_and_companions_martyrs": {
+    "role": "Pape et diacres, martyrs",
+    "era": "IIIᵉ siècle",
+    "died": "6 août 258, à Rome",
+    "story": "Élu le 30 août 257, Sixte est capturé dans la catacombe de Prétextat le 6 août 258 et exécuté avec quatre diacres. Deux autres diacres meurent le même jour, et Laurent quatre jours plus tard.",
+    "caution": "Son origine grecque et son passé de philosophe sont tenus pour erronés, et sa rencontre avec Laurent est probablement légendaire.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Sixte_II" }
+    ]
+  },
+  "cajetan_of_thiene_priest": {
+    "role": "Prêtre, fondateur des Théatins",
+    "era": "XVᵉ-XVIᵉ siècle",
+    "born": "Octobre 1480, à Vicence",
+    "died": "7 août 1547, à Naples",
+    "patron": "Théatins, chômeurs, travailleurs en Argentine",
+    "story": "Juriste et diplomate vénitien à partir de 1506, Gaétan est ordonné prêtre en 1516. Il fonde l’ordre des Théatins, approuvé par Clément VII en 1524. Clément X le canonise le 12 avril 1671.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Gaétan_de_Thiene" }
+    ]
+  },
+  "dominic_de_guzman_priest": {
+    "role": "Prêtre, fondateur des Frères prêcheurs",
+    "era": "XIIᵉ-XIIIᵉ siècle",
+    "born": "Vers 1170, à Caleruega (Castille)",
+    "died": "6 août 1221, à Bologne",
+    "patron": "Astronomes, République dominicaine",
+    "story": "Chanoine d’Osma, Dominique prêche contre le catharisme et fonde en 1206 un monastère de femmes à Prouilhe. En 1216, il fonde l’ordre des Prêcheurs, et le 15 août 1217 il disperse ses seize premiers frères. Grégoire IX le canonise en 1234.",
+    "caution": "Le songe de sa mère et l’apparition mariale de 1208 relèvent de la légende.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 3 février 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20100203.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Dominique_de_Guzmán" }
+    ]
+  },
+  "teresa_benedicta_of_the_cross_stein_virgin": {
+    "role": "Philosophe, carmélite, martyre",
+    "era": "XIXᵉ-XXᵉ siècle",
+    "born": "12 octobre 1891, à Breslau",
+    "died": "9 août 1942, à Auschwitz",
+    "patron": "Co-patronne de l’Europe",
+    "story": "Philosophe née dans une famille juive, Edith Stein se convertit au catholicisme en 1921. Interdite d’enseignement en 1933, elle devient carmélite à Cologne, puis à Echt en 1938. Arrêtée et déportée, elle meurt à Auschwitz. Jean-Paul II la canonise le 11 octobre 1998.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Edith_Stein" }
+    ]
+  },
+  "lawrence_of_rome_deacon": {
+    "role": "Diacre et martyr",
+    "era": "IIIᵉ siècle",
+    "born": "Vers 225, à Huesca selon la tradition",
+    "died": "10 août 258, à Rome",
+    "patron": "Rome, diacres, pompiers, cuisiniers, bibliothécaires",
+    "story": "Diacre du pape Sixte II, Laurent garde le trésor de l’Église et distribue ses biens aux pauvres. Il meurt martyr trois jours après Sixte. Son culte, attesté au IVᵉ siècle, est chanté par Ambroise et Prudence.",
+    "caution": "Ses paroles au bourreau sur le gril appartiennent à la tradition.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Laurent_de_Rome" }
+    ]
+  },
+  "clare_of_assisi_virgin": {
+    "role": "Fondatrice des Clarisses",
+    "era": "XIIᵉ-XIIIᵉ siècle",
+    "born": "1193 ou 1194, à Assise",
+    "died": "11 août 1253, à Assise",
+    "patron": "Télévision, doreurs, aveugles",
+    "story": "Issue de la noblesse d’Assise, Claire quitte sa famille vers 1211-1212 pour rejoindre François à la Portioncule. Abbesse de Saint-Damien, elle fonde les Pauvres Dames. Innocent IV approuve sa règle deux jours avant sa mort, et Alexandre IV la canonise en 1255.",
+    "caution": "L’ostensoir qui repousse les Sarrasins relève de la tradition.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 15 septembre 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20100915.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Claire_d'Assise" }
+    ]
+  },
+  "jane_frances_de_chantal_religious": {
+    "role": "Veuve, fondatrice de la Visitation",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "23 janvier 1572, à Dijon",
+    "died": "13 décembre 1641, à Moulins",
+    "patron": "Veuves, mères de famille",
+    "story": "Veuve en 1601, Jeanne rencontre François de Sales en 1604 et fonde avec lui la Visitation en 1610, qu’elle dirige et développe. Clément XIII la canonise le 16 juillet 1767.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jeanne_de_Chantal" }
+    ]
+  },
+  "pontian_i_pope_and_hippolytus_of_rome_priest": {
+    "role": "Pape et prêtre, martyrs",
+    "era": "IIIᵉ siècle",
+    "died": "Vers 235, en Sardaigne",
+    "story": "Vers 235, le pape Pontien et Hippolyte, prêtre de l’Église de Rome, sont exilés ensemble en Sardaigne, où ils meurent. Leur inhumation commune à Saint-Calixte, datée du 13 août 236, explique leur fête commune.",
+    "caution": "L’origine alexandrine d’Hippolyte et son élection à Rome sont peu documentées.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Hippolyte_de_Rome" }
+    ]
+  },
+  "maximilian_mary_raymund_kolbe_priest": {
+    "role": "Franciscain, martyr d’Auschwitz",
+    "era": "XXᵉ siècle",
+    "born": "8 janvier 1894, à Zduńska Wola (Pologne)",
+    "died": "14 août 1941, à Auschwitz",
+    "patron": "Journalistes, radioamateurs, prisonniers politiques",
+    "story": "Prêtre franciscain en 1918, Maximilien fonde la Mission de l’Immaculée et, en 1927, Niepokalanów. Arrêté en février 1941, il meurt à Auschwitz après s’être offert à la place d’un père de famille. Jean-Paul II le canonise le 10 octobre 1982.",
+    "caution": "Les publications liées à son œuvre dans l’entre-deux-guerres comportent des textes antisémites virulents.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Maximilien_Kolbe" }
+    ]
+  },
+  "stephen_i_of_hungary": {
+    "role": "Roi de Hongrie",
+    "era": "Xᵉ-XIᵉ siècle",
+    "born": "Vers 975, à Esztergom",
+    "died": "15 août 1038",
+    "patron": "Hongrie",
+    "story": "Grand-prince vers 997, Étienne est couronné roi vers l’an 1000 et fonde le royaume de Hongrie. Grégoire VII le canonise le 20 août 1083.",
+    "caution": "Son année de naissance varie selon les sources, et son baptême par Adalbert ne vient que d’une légende.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Étienne_Ier_de_Hongrie" }
+    ]
+  },
+  "roch_of_montpellier": {
+    "role": "Pèlerin",
+    "era": "XIVᵉ siècle",
+    "born": "Vers 1350, à Montpellier",
+    "died": "Vers 1379, probablement à Voghera (Italie)",
+    "patron": "Pèlerins, chirurgiens, dermatologues ; invoqué contre la peste",
+    "story": "Fils d’un consul de Montpellier, Roch part en pèlerinage. Il est à Acquapendente en 1367, à Rome début 1368, et à Plaisance en 1371. Sa fête est attestée à Voghera dès 1382, et Urbain VIII le canonise en 1629.",
+    "caution": "La croix rouge de naissance, le chien au pain et ses cinq ans de prison viennent de la tradition.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Roch_de_Montpellier" }
+    ]
+  },
+  "john_eudes_priest": {
+    "role": "Prêtre, fondateur",
+    "era": "XVIIᵉ siècle",
+    "born": "14 novembre 1601, à Ri (Orne)",
+    "died": "19 août 1680, à Caen",
+    "story": "Entré à l’Oratoire en 1623, Jean fonde à Caen en 1641 un refuge pour femmes et, le 25 mars 1643, la congrégation de Jésus et Marie. En 1648, il fait célébrer à Autun une messe du Cœur de Marie. Pie XI le canonise le 31 mai 1925.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_Eudes" }
+    ]
+  },
+  "ezequiel_moreno_bishop": {
+    "role": "Augustin récollet, évêque de Pasto",
+    "era": "XIXᵉ-XXᵉ siècle",
+    "born": "9 avril 1848, à Alfaro (Espagne)",
+    "died": "19 août 1906, à Monteagudo (Espagne)",
+    "patron": "Personnes atteintes du cancer",
+    "story": "Entré chez les récollets en 1864, Ezequiel est ordonné prêtre à Manille le 3 juin 1871, puis devient curé de Santa Cruz en 1881. Évêque en 1894, il est nommé à Pasto, en Colombie, en 1895. Jean-Paul II le canonise le 11 octobre 1992.",
+    "caution": "Son engagement conservateur durant la guerre des Mille Jours, avec la dénonciation du Parti libéral, reste discuté.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Ezequiel_Moreno_y_Díaz" }
+    ]
+  },
+  "bernard_of_clairvaux_abbot": {
+    "role": "Abbé cistercien, docteur de l’Église",
+    "era": "XIᵉ-XIIᵉ siècle",
+    "born": "1090 ou 1091, à Fontaine-lès-Dijon",
+    "died": "20 août 1153, à Clairvaux",
+    "patron": "Cisterciens, apiculteurs",
+    "story": "Bernard entre à Cîteaux en 1112 et fonde Clairvaux en 1115. En 1132, Clairvaux prend son indépendance vis-à-vis de Cluny. Alexandre III le canonise le 18 janvier 1174, et Pie VIII le proclame docteur de l’Église en 1830.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 21 octobre 2009", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2009/documents/hf_ben-xvi_aud_20091021.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Bernard_de_Clairvaux" }
+    ]
+  },
+  "pius_x_pope": {
+    "role": "Pape",
+    "era": "XIXᵉ-XXᵉ siècle",
+    "born": "2 juin 1835, à Riese (Italie)",
+    "died": "20 août 1914, à Rome",
+    "story": "Ordonné prêtre le 18 septembre 1858, Giuseppe Sarto est curé à Salzano, évêque de Mantoue en 1884 et cardinal en 1893. Élu pape le 4 août 1903, il est canonisé par Pie XII le 29 mai 1954.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 18 août 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20100818.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pie_X" }
+    ]
+  },
+  "rose_of_lima_virgin": {
+    "role": "Tertiaire dominicaine",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "30 avril 1586, à Lima",
+    "died": "24 août 1617, à Lima",
+    "patron": "Amérique latine, Pérou, Philippines, fleuristes",
+    "story": "Rose prend l’habit de tertiaire dominicaine en 1606 et vit à Lima. Elle y meurt à 31 ans. Béatifiée en 1668, elle est canonisée par Clément X en 1671.",
+    "caution": "La rose apparue sur son visage à la naissance est une légende.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Rose_de_Lima" }
+    ]
+  },
+  "bartholomew_apostle": {
+    "role": "Apôtre",
+    "era": "Iᵉʳ siècle",
+    "born": "Iᵉʳ siècle, à Cana selon la tradition",
+    "died": "Iᵉʳ siècle, en Arménie selon la tradition",
+    "patron": "Arménie, relieurs, bouchers, tanneurs",
+    "story": "L’un des Douze, Barthélemy est mal connu. Ses reliques arrivent à Lipari en 580, puis à Bénévent en 809, avant qu’Otton III ne les apporte à Rome en 983.",
+    "caution": "Son mode de martyre varie selon les sources : crucifié, écorché ou décapité. Son identification avec Nathanaël et ses missions en Arménie et en Inde sont incertaines.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 4 octobre 2006", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20061004.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Barthélemy_(apôtre)" }
+    ]
+  },
+  "louis_ix_of_france": {
+    "role": "Roi de France",
+    "era": "XIIIᵉ siècle",
+    "born": "25 avril 1214, à Poissy",
+    "died": "25 août 1270, près de Tunis",
+    "story": "Roi à 12 ans, sacré à Reims le 29 novembre 1226, Louis fait bâtir en 1242 la Sainte-Chapelle pour les reliques de la Passion. Il part pour la septième croisade en Égypte et meurt près de Tunis en 1270. Il est canonisé dès 1297.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Louis_IX" }
+    ]
+  },
+  "joseph_of_calasanz_priest": {
+    "role": "Prêtre, fondateur des Piaristes",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "11 septembre 1557, à Calasanz (Aragon)",
+    "died": "25 août 1648, à Rome",
+    "patron": "Écoles pies",
+    "story": "Ordonné prêtre le 17 décembre 1583, Joseph arrive à Rome en 1592 et y ouvre en 1597 la première école gratuite d’Europe. Il fonde les Piaristes. Clément XIII le canonise le 16 juillet 1767.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Joseph_Calasanz" }
+    ]
+  },
+  "caesarius_of_arles_bishop": {
+    "role": "Évêque d’Arles",
+    "era": "Vᵉ-VIᵉ siècle",
+    "born": "Vers 470, à Chalon-sur-Saône",
+    "died": "27 août 542, à Arles",
+    "story": "Ordonné prêtre en 499, Césaire devient évêque d’Arles en décembre 502. Il préside le concile d’Agde en 506, est nommé vicaire du Siège apostolique pour la Gaule et l’Espagne en 514 et mène le deuxième concile d’Orange en 529. Il laisse des sermons et des règles monastiques.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Césaire_d'Arles" }
+    ]
+  },
+  "monica_of_hippo": {
+    "role": "Mère de saint Augustin",
+    "era": "IVᵉ siècle",
+    "born": "331 ou 332, à Thagaste (Algérie actuelle)",
+    "died": "13 novembre 387, à Ostie",
+    "patron": "Mères, épouses, veuves",
+    "story": "Monique voit son fils Augustin s’éloigner dès 369, puis renoncer au manichéisme vers 385. Dans la nuit du 24 au 25 avril 387, il reçoit le baptême d’Ambroise. Monique meurt la même année à Ostie, après neuf jours de maladie.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Monique_d'Hippone" }
+    ]
+  },
+  "augustine_of_hippo_bishop": {
+    "role": "Évêque d’Hippone, docteur de l’Église",
+    "era": "IVᵉ-Vᵉ siècle",
+    "born": "13 novembre 354, à Thagaste (Algérie actuelle)",
+    "died": "28 août 430, à Hippone",
+    "story": "Fils de Monique, Augustin se convertit en 386 après sa rencontre avec Ambroise, qui le baptise à Milan dans la nuit du 24 au 25 avril 387. Évêque d’Hippone, il est l’un des grands docteurs de l’Église latine, titre confirmé par Boniface VIII en 1298.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 9 janvier 2008", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2008/documents/hf_ben-xvi_aud_20080109.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Augustin_d'Hippone" }
+    ]
+  },
+  "gregory_i_the_great_pope": {
+    "role": "Pape, docteur de l’Église",
+    "era": "VIᵉ-VIIᵉ siècle",
+    "born": "Vers 540, à Rome",
+    "died": "12 mars 604, à Rome",
+    "story": "Préfet de Rome en 572, Grégoire se fait moine vers 574-575 au monastère Saint-André. À la mort de Pélage II, emporté par la peste en 590, il est élu pape et consacré le 3 septembre. Il compte parmi les grands docteurs de l’Église d’Occident.",
+    "caution": "Son rôle dans le chant grégorien est incertain. Sa première Vie date du début du VIIIᵉ siècle.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 28 mai 2008", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2008/documents/hf_ben-xvi_aud_20080528.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Grégoire_Ier" }
+    ]
+  },
+  "teresa_of_calcutta_virgin": {
+    "role": "Religieuse, fondatrice des Missionnaires de la Charité",
+    "era": "XXᵉ siècle",
+    "born": "26 août 1910, à Üsküb (Skopje)",
+    "died": "5 septembre 1997, à Calcutta",
+    "story": "Orpheline de père à 9 ans, elle entre chez les sœurs de Lorette, qu’elle quitte en 1949 pour se consacrer aux plus pauvres. Elle fonde en 1950 les Missionnaires de la Charité et reçoit le prix Nobel de la paix en 1979. Le pape François la canonise le 4 septembre 2016.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Mère_Teresa" }
+    ]
+  },
+  "peter_claver_priest": {
+    "role": "Prêtre jésuite, missionnaire",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "26 juin 1580, à Verdú (Catalogne)",
+    "died": "8 septembre 1654, à Carthagène des Indes",
+    "patron": "Colombie, missions auprès des Noirs",
+    "story": "Jésuite catalan, Pierre est ordonné prêtre le 19 mars 1616 et voue sa vie aux Africains réduits en esclavage à Carthagène des Indes. Atteint de la peste en 1650, il passe ses quatre dernières années à l’infirmerie. Léon XIII le canonise le 15 janvier 1888.",
+    "caution": "La Compagnie de Jésus aurait elle-même réduit en esclavage certains de ses interprètes.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pierre_Claver" }
+    ]
+  },
+  "john_chrysostom_bishop": {
+    "role": "Archevêque de Constantinople, docteur de l’Église",
+    "era": "IVᵉ-Vᵉ siècle",
+    "born": "Entre 344 et 349, à Antioche",
+    "died": "407, près de Comana (Turquie actuelle)",
+    "story": "Après une retraite d’ermite, Jean revient à Antioche, est ordonné prêtre en 386 et prononce en 387 ses homélies Sur les statues. Élu à Constantinople en 397, il finit sa vie en exil.",
+    "caution": "Sa date de naissance et son maître Libanios sont discutés.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 19 septembre 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070919.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_Chrysostome" }
+    ]
+  },
+  "cornelius_i_pope_and_cyprian_of_carthage_bishop_martyrs": {
+    "role": "Pape et évêque, martyrs",
+    "era": "IIIᵉ siècle",
+    "born": "Vers 180 à Rome (Corneille) ; vers 200 (Cyprien)",
+    "died": "Juin 253 à Civitavecchia (Corneille) ; 14 septembre 258 à Carthage (Cyprien)",
+    "story": "Élu pape en mars 251, Corneille excommunie Novatien avec le soutien de Cyprien, puis est déporté fin 252 et meurt en 253. Ancien rhéteur converti, Cyprien devient évêque de Carthage vers 249. Exilé en août 257, il est décapité le 14 septembre 258, sous Valérien.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 6 juin 2007 (Cyprien)", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070606.html" },
+      { "label": "Wikipédia (Corneille)", "url": "https://fr.wikipedia.org/wiki/Corneille_(pape)" },
+      { "label": "Wikipédia (Cyprien)", "url": "https://fr.wikipedia.org/wiki/Cyprien_de_Carthage" }
+    ]
+  },
+  "hildegard_of_bingen_abbess": {
+    "role": "Abbesse, mystique, docteur de l’Église",
+    "era": "XIIᵉ siècle",
+    "born": "1098, à Bermersheim (Allemagne)",
+    "died": "17 septembre 1179, à Rupertsberg",
+    "story": "Offerte à la vie religieuse à 8 ans, Hildegarde est élue abbesse en 1136. Elle fonde le monastère de Rupertsberg vers 1147-1150, puis celui d’Eibingen en 1165. Mystique et compositrice, elle est canonisée le 10 mai 2012 et proclamée docteur de l’Église le 7 octobre 2012.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 1ᵉʳ septembre 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20100901.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Hildegarde_de_Bingen" }
+    ]
+  },
+  "robert_bellarmine_bishop": {
+    "role": "Jésuite, cardinal, docteur de l’Église",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "4 octobre 1542, à Montepulciano (Italie)",
+    "died": "17 septembre 1621, à Rome",
+    "story": "Entré chez les jésuites en 1560, Robert occupe en 1576 la chaire de controverses du Collège romain. Cardinal le 3 mars 1599, archevêque de Capoue en 1602, il est rappelé à Rome en 1605. Canonisé en 1930, il est proclamé docteur de l’Église en 1931.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 23 février 2011", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2011/documents/hf_ben-xvi_aud_20110223.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Robert_Bellarmin" }
+    ]
+  },
+  "januarius_i_of_benevento_bishop": {
+    "role": "Évêque de Bénévent, martyr",
+    "era": "Début du IVᵉ siècle",
+    "died": "305, près de Pouzzoles (Italie)",
+    "patron": "Naples ; donneurs de sang, éruptions volcaniques",
+    "story": "Janvier meurt décapité lors de la Grande persécution. En 831, son corps est obtenu par Sicon de Bénévent, puis il est transféré à la cathédrale de Naples en 1497, où il est devenu le patron de la ville.",
+    "caution": "Sa vie est largement légendaire.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Janvier_de_Bénévent" }
+    ]
+  },
+  "andrew_kim_tae_gon_priest_paul_chong_ha_sang_and_companions_martyrs": {
+    "role": "Martyrs de Corée",
+    "era": "XIXᵉ siècle",
+    "died": "Entre 1839 et 1867, en Corée",
+    "story": "Après l’arrivée des premiers missionnaires français en 1836, les persécutions de 1839, 1846 et 1866 tuent au moins 8 000 fidèles. Jean-Paul II canonise à Séoul le 6 mai 1984 cent trois martyrs, dont André Kim Taegon, premier prêtre coréen, et Paul Chong Hasang, un laïc.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Martyrs_de_Corée" }
+    ]
+  },
+  "matthew_apostle": {
+    "role": "Apôtre et évangéliste",
+    "era": "Iᵉʳ siècle",
+    "born": "Début du Iᵉʳ siècle, en Galilée",
+    "died": "Vers 71 selon la tradition",
+    "patron": "Banquiers, comptables, douaniers",
+    "story": "Publicain appelé par Jésus, Matthieu devient l’un des Douze. Selon Irénée, il prêche aux Hébreux. La tradition lui attribue le premier Évangile, mais celui-ci a probablement été rédigé dans les années 80.",
+    "caution": "Le lieu de sa mort varie selon des traditions concurrentes. L’attribution de l’Évangile est généralement mise en doute par les chercheurs, même si l’Église l’a transmise unanimement.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 30 août 2006", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20060830.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Matthieu_(apôtre)" }
+    ]
+  },
+  "pius_francesco_forgione_priest": {
+    "role": "Prêtre capucin, mystique",
+    "era": "XIXᵉ-XXᵉ siècle",
+    "born": "25 mai 1887, à Pietrelcina (Italie)",
+    "died": "23 septembre 1968, à San Giovanni Rotondo",
+    "story": "Entré chez les capucins en 1903, Padre Pio est ordonné prêtre le 10 août 1910. Il porte des stigmates à partir du 20 septembre 1918. Le Saint-Siège limite ses apparitions publiques de 1931 à 1933. Il fait bâtir un hôpital, inauguré en 1956. Jean-Paul II le canonise le 16 juin 2002.",
+    "caution": "Le récit de sa vie vient souvent de sources hagiographiques.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Padre_Pio" }
+    ]
+  },
+  "cosmas_of_cilicia_and_damian_of_cilicia_martyrs": {
+    "role": "Médecins, martyrs",
+    "era": "IIIᵉ-IVᵉ siècle",
+    "born": "IIIᵉ siècle, en Cilicie ou en Arabie",
+    "died": "285 ou 303",
+    "patron": "Médecins, chirurgiens, pharmaciens",
+    "story": "Frères médecins, Côme et Damien sont appelés « anargyres », car ils soignent sans argent. Leur culte est très ancien : Félix IV leur dédie une basilique à Rome au VIᵉ siècle, et Justinien restaure leur église de Constantinople.",
+    "caution": "La greffe de la jambe d’un Maure est un épisode légendaire, et les circonstances de leur vie sont incertaines.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Côme_et_Damien" }
+    ]
+  },
+  "vincent_de_paul_priest": {
+    "role": "Prêtre, fondateur des Lazaristes et des Filles de la Charité",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "24 avril 1581, au Pouy (Landes)",
+    "died": "27 septembre 1660, à Paris",
+    "patron": "Œuvres charitables",
+    "story": "Ordonné prêtre le 23 septembre 1600, Vincent est curé de Clichy en 1612. Après le sermon de Folleville, le 25 janvier 1617, il fonde la Congrégation de la Mission en 1625, puis les Filles de la Charité avec Louise de Marillac. Il est canonisé le 16 juin 1737.",
+    "caution": "Sa captivité à Tunis, à partir de 1605, est débattue par les historiens.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Vincent_de_Paul" }
+    ]
+  },
+  "wenceslaus_i_of_bohemia_martyr": {
+    "role": "Duc de Bohême, martyr",
+    "era": "Xᵉ siècle",
+    "born": "Vers 907, à Stochov (Bohême)",
+    "died": "28 septembre 929 ou 935, à Stará Boleslav",
+    "patron": "Tchéquie, prisonniers, enfants de chœur",
+    "story": "Duc de Bohême après la mort de son père en 921, Venceslas fait bâtir une rotonde à Prague vers 926. Il est assassiné devant l’église de Stará Boleslav, et ses restes sont transférés à Prague.",
+    "caution": "L’année de sa mort varie selon les sources.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Venceslas_Ier_de_Bohême_(duc)" }
+    ]
+  },
+  "lawrence_ruiz_and_companions_martyrs": {
+    "role": "Laïc philippin et compagnons, martyrs",
+    "era": "XVIIᵉ siècle",
+    "born": "Vers 1600, à Binondo (Manille)",
+    "died": "29 septembre 1637, à Nagasaki",
+    "patron": "Philippines",
+    "story": "Laïc marié et père de trois enfants, Lorenzo Ruiz est le protomartyr des Philippines. Il meurt à Nagasaki avec d’autres chrétiens, suspendu tête en bas, durant les persécutions au Japon. Béatifié à Manille le 18 février 1981, il est canonisé à Rome le 18 octobre 1987.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Lorenzo_Ruiz" }
+    ]
+  },
+  "jerome_of_stridon_priest": {
+    "role": "Moine, traducteur de la Bible, docteur de l’Église",
+    "era": "IVᵉ-Vᵉ siècle",
+    "born": "Vers 347, à Stridon",
+    "died": "30 septembre 420, à Bethléem",
+    "patron": "Traducteurs, bibliothécaires, étudiants",
+    "story": "Baptisé vers 366, Jérôme vit au désert de Chalcis à partir de 375. Secrétaire du pape Damase à Rome, il part après sa mort, en 384-385, pour Bethléem. On lui doit la traduction latine de la Bible, la Vulgate.",
+    "caution": "Son titre de cardinal, souvent représenté, vient de la tradition.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 7 novembre 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20071107.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jérôme_de_Stridon" }
+    ]
+  },
+  "therese_of_the_child_jesus_and_the_holy_face_of_lisieux_virgin": {
+    "role": "Carmélite, docteur de l’Église",
+    "era": "XIXᵉ siècle",
+    "born": "2 janvier 1873, à Alençon",
+    "died": "30 septembre 1897, à Lisieux",
+    "patron": "Missions, France",
+    "story": "Carmélite à Lisieux, Thérèse meurt à 24 ans. Pie XI la béatifie en 1923, la canonise le 17 mai 1925 et la proclame patronne des missions en 1927. Jean-Paul II la proclame docteur de l’Église le 19 octobre 1997.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 6 avril 2011", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2011/documents/hf_ben-xvi_aud_20110406.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Thérèse_de_Lisieux" }
+    ]
+  },
+  "francis_of_assisi": {
+    "role": "Fondateur des Frères mineurs",
+    "era": "XIIᵉ-XIIIᵉ siècle",
+    "born": "Fin 1181 ou début 1182, à Assise",
+    "died": "3 octobre 1226, à la Portioncule (Assise)",
+    "patron": "Italie, animaux, écologie",
+    "story": "Après la défaite de Ponte San Giovanni en 1202 et un an de captivité, François change de vie. Il fonde les Frères mineurs en 1210 et reçoit les stigmates à La Verna en 1224, selon la tradition. Grégoire IX le canonise dès 1228.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 27 janvier 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20100127.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/François_d'Assise" }
+    ]
+  },
+  "faustina_kowalska_virgin": {
+    "role": "Religieuse, mystique",
+    "era": "XXᵉ siècle",
+    "born": "25 août 1905, à Głogowiec (Pologne)",
+    "died": "5 octobre 1938, à Cracovie",
+    "story": "Admise chez les Sœurs de Notre-Dame de la Miséricorde le 1ᵉʳ août 1925, Faustine demande le 22 février 1931 un tableau « Jésus, j’ai confiance en Toi ». Elle prononce ses vœux perpétuels en 1933 et meurt à 33 ans. Jean-Paul II la canonise le 30 avril 2000.",
+    "caution": "Visions, stigmates invisibles et bilocation viennent de ses écrits.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Faustine_Kowalska" }
+    ]
+  },
+  "bruno_of_cologne_priest": {
+    "role": "Prêtre, fondateur des Chartreux",
+    "era": "XIᵉ siècle",
+    "born": "Vers 1030, à Cologne",
+    "died": "6 octobre 1101, à la Torre (Calabre)",
+    "patron": "Chartreux, Calabre",
+    "story": "Écolâtre de Reims en 1057, Bruno s’établit dans le massif de la Chartreuse à l’été 1084. Appelé à Rome par Urbain II en 1090, il finit sa vie en Calabre. Son culte est autorisé en 1514, et sa fête entre au Missel romain en 1623.",
+    "caution": "Il n’a jamais été canonisé formellement, et sa rencontre avec Roger de Sicile est légendaire.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Bruno_le_Chartreux" }
+    ]
+  },
+  "denis_of_paris_bishop_and_companions_martyrs": {
+    "role": "Premier évêque de Paris, martyr",
+    "era": "IIIᵉ siècle",
+    "died": "Entre 250 et 272, à Montmartre",
+    "patron": "Diocèse de Saint-Denis, La Réunion",
+    "story": "Selon la tradition, Denis vient d’Italie vers 245 et devient le premier évêque de Paris avant d’être martyrisé. Il est mentionné pour la première fois vers 520, dans la Vie de sainte Geneviève.",
+    "caution": "Figure largement légendaire. Sa confusion avec Denys l’Aréopagite date du IXᵉ siècle, et la scène où il porte sa tête vient de sa légende.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Denis_de_Paris" }
+    ]
+  },
+  "john_leonardi_priest": {
+    "role": "Pharmacien devenu prêtre, fondateur",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "1541, à Diecimo (Italie)",
+    "died": "9 octobre 1609, à Rome",
+    "patron": "Pharmaciens",
+    "story": "Pharmacien, Jean est ordonné prêtre en 1572 et fonde les Clercs réguliers de la Mère de Dieu, dont l’institut est approuvé en 1614. Il est canonisé par Pie XI en 1938, et Benoît XVI le proclame patron des pharmaciens en 2006.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_Leonardi" }
+    ]
+  },
+  "john_henry_newman_priest": {
+    "role": "Prêtre, cardinal, docteur de l’Église",
+    "era": "XIXᵉ siècle",
+    "born": "21 février 1801, à Londres",
+    "died": "11 août 1890, à Edgbaston",
+    "story": "Anglican, Newman se convertit au catholicisme en 1845 et est ordonné prêtre en 1847. Léon XIII le crée cardinal le 12 mai 1879. Béatifié par Benoît XVI en 2010, il est canonisé par François le 13 octobre 2019 et proclamé docteur de l’Église par Léon XIV le 1ᵉʳ novembre 2025.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/John_Henry_Newman" }
+    ]
+  },
+  "john_xxiii_pope": {
+    "role": "Pape",
+    "era": "XIXᵉ-XXᵉ siècle",
+    "born": "25 novembre 1881, à Sotto il Monte (Italie)",
+    "died": "3 juin 1963, au Vatican",
+    "story": "Ordonné prêtre le 10 août 1904, Angelo Roncalli est nonce en France de 1944 à 1953, puis patriarche de Venise. Élu pape le 28 octobre 1958, il convoque le concile Vatican II, dont l’ouverture, le 11 octobre 1962, donne la date de sa fête. François le canonise le 27 avril 2014.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_XXIII" }
+    ]
+  },
+  "callistus_i_pope": {
+    "role": "Pape et martyr",
+    "era": "IIᵉ-IIIᵉ siècle",
+    "born": "Vers 155, à Rome",
+    "died": "14 octobre 222, à Rome",
+    "story": "Le pape Zéphyrin fait de Calixte son archidiacre en 199. Élu évêque de Rome vers 217, il meurt lors d’une émeute au Trastevere en 222. Il est considéré comme martyr.",
+    "caution": "Sa vie n’est connue que par Hippolyte de Rome, son adversaire, source hostile.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Calixte_Ier" }
+    ]
+  },
+  "teresa_of_jesus_of_avila_virgin": {
+    "role": "Carmélite réformatrice, docteur de l’Église",
+    "era": "XVIᵉ siècle",
+    "born": "28 mars 1515, à Ávila",
+    "died": "Nuit du 4 au 15 octobre 1582, à Alba de Tormes",
+    "patron": "Espagne, écrivains espagnols, joueurs d’échecs",
+    "story": "Issue d’une famille de convertis, Thérèse perd sa mère à 12 ans. Elle se lance dans la réforme du Carmel. Canonisée le 12 mars 1622, elle est proclamée par Paul VI, le 27 septembre 1970, première femme docteur de l’Église.",
+    "caution": "La nuit de sa mort s’explique par le passage du calendrier julien au calendrier grégorien.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 2 février 2011", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2011/documents/hf_ben-xvi_aud_20110202.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Thérèse_d'Avila" }
+    ]
+  },
+  "hedwig_of_silesia_religious": {
+    "role": "Duchesse, veuve retirée à l’abbaye de Trzebnica",
+    "era": "XIIᵉ-XIIIᵉ siècle",
+    "born": "1174, à Andechs (Bavière)",
+    "died": "15 octobre 1243, à Trzebnica (Silésie)",
+    "patron": "Silésie, Wrocław, Trzebnica",
+    "story": "Mariée vers 1186 à Henri Iᵉʳ le Barbu, Edwige fonde l’abbaye de Trzebnica en 1202. À la mort de son mari, en 1238, elle s’y retire. En 1241, son fils Henri II est tué à Legnica face aux Mongols. Clément IV la canonise en 1267.",
+    "caution": "Les récits pieux sur sa vie, comme ses marches pieds nus, ne sont pas sourcés.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Edwige_de_Silésie" }
+    ]
+  },
+  "margaret_mary_alacoque_virgin": {
+    "role": "Visitandine, mystique du Sacré-Cœur",
+    "era": "XVIIᵉ siècle",
+    "born": "22 juillet 1647, à Verosvres (Bourgogne)",
+    "died": "17 octobre 1690, à Paray-le-Monial",
+    "story": "Entrée à la Visitation de Paray-le-Monial le 25 mai 1671, Marguerite-Marie rapporte une première vision du Sacré-Cœur le 27 décembre 1673. Maîtresse des novices en 1685, elle meurt en 1690. Benoît XV la canonise le 13 mai 1920.",
+    "caution": "Ses visions ne sont connues que par son propre témoignage.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Marguerite-Marie_Alacoque" }
+    ]
+  },
+  "ignatius_of_antioch_bishop": {
+    "role": "Évêque d’Antioche, martyr",
+    "era": "Iᵉʳ-IIᵉ siècle",
+    "born": "Vers 35, en Syrie romaine",
+    "died": "Vers 107-113, à Rome",
+    "story": "Troisième évêque d’Antioche, Ignace écrit à plusieurs Églises lors de son voyage vers Rome, où il meurt martyr. Ses lettres, adressées notamment aux Éphésiens et aux Romains, comptent parmi les témoins les plus anciens de la vie de l’Église.",
+    "caution": "L’authenticité de ses lettres a été débattue, et le récit de son martyre est tardif.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 14 mars 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070314.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Ignace_d'Antioche" }
+    ]
+  },
+  "luke_evangelist": {
+    "role": "Évangéliste",
+    "era": "Iᵉʳ siècle",
+    "born": "Iᵉʳ siècle, à Antioche selon la tradition",
+    "died": "Iᵉʳ siècle",
+    "patron": "Médecins, peintres",
+    "story": "La tradition lui attribue le troisième Évangile et les Actes des Apôtres, rédigés dans les années 80-85. Un prologue ancien le fait mourir à 84 ans en Béotie.",
+    "caution": "Sa profession de médecin, son compagnonnage avec Paul et son origine sont contestés, et la plupart des exégètes doutent que l’auteur soit ce compagnon.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Luc_(évangéliste)" }
+    ]
+  },
+  "john_de_brebeuf_isaac_jogues_priests_and_companions_martyrs": {
+    "role": "Jésuites, martyrs d’Amérique du Nord",
+    "era": "XVIIᵉ siècle",
+    "died": "Entre 1642 et 1649, en Amérique du Nord",
+    "patron": "Canada (patrons secondaires)",
+    "story": "Huit missionnaires français sont tués lors des guerres entre Hurons et Iroquois : René Goupil en 1642, Isaac Jogues et Jean de La Lande en 1646, Antoine Daniel en 1648, Jean de Brébeuf et ses compagnons en 1649. Pie XI les canonise en 1930.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Martyrs_canadiens" }
+    ]
+  },
+  "paul_of_the_cross_priest": {
+    "role": "Prêtre, fondateur des Passionistes",
+    "era": "XVIIᵉ-XVIIIᵉ siècle",
+    "born": "3 janvier 1694, à Ovada (Italie)",
+    "died": "18 octobre 1775, à Rome",
+    "story": "Paul prend l’habit d’ermite en 1720 et est ordonné à Saint-Pierre le 7 juin 1727. Il fonde la Congrégation de la Passion, approuvée en 1746. Pie IX le canonise le 29 juin 1867.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Paul_de_la_Croix" }
+    ]
+  },
+  "pedro_calungsod_martyr": {
+    "role": "Catéchiste philippin, martyr",
+    "era": "XVIIᵉ siècle",
+    "born": "1654, à Ginatilan (Cebu)",
+    "died": "2 avril 1672, à Tumon (Guam)",
+    "story": "Catéchiste laïc, Pedro accompagne dès 1668 le père San Vitores dans sa mission aux Mariannes. Il meurt martyr à ses côtés en 1672, à 17 ans. Jean-Paul II le béatifie le 5 mars 2000, et Benoît XVI le canonise le 21 octobre 2012.",
+    "caution": "Peu de sources documentent sa vie.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Pedro_Calungsod" }
+    ]
+  },
+  "john_paul_ii_pope": {
+    "role": "Pape",
+    "era": "XXᵉ-XXIᵉ siècle",
+    "born": "18 mai 1920, à Wadowice (Pologne)",
+    "died": "2 avril 2005, au Vatican",
+    "story": "Ordonné prêtre le 1ᵉʳ novembre 1946, Karol Wojtyła devient archevêque de Cracovie en 1964 et cardinal en 1967. Élu pape le 16 octobre 1978, il est béatifié par Benoît XVI le 1ᵉʳ mai 2011 et canonisé par François le 27 avril 2014.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean-Paul_II" }
+    ]
+  },
+  "john_of_capistrano_priest": {
+    "role": "Juriste, franciscain, prédicateur",
+    "era": "XIVᵉ-XVᵉ siècle",
+    "born": "24 juin 1386, à Capestrano (Italie)",
+    "died": "23 octobre 1456, à Ilok (Croatie actuelle)",
+    "patron": "Aumôniers militaires, juristes",
+    "story": "Juriste en 1412, Jean devient franciscain observant en 1416. Prédicateur et envoyé des papes, il participe au combat de Belgrade en juillet 1456 et meurt peu après. Il est canonisé en 1690.",
+    "caution": "Il a aussi mené des campagnes contre les Juifs, réclamant leur expulsion à Breslau.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_de_Capistran" }
+    ]
+  },
+  "anthony_mary_claret_bishop": {
+    "role": "Archevêque, fondateur des Clarétains",
+    "era": "XIXᵉ siècle",
+    "born": "23 décembre 1807, à Sallent (Catalogne)",
+    "died": "24 octobre 1870, à l’abbaye de Fontfroide (Aude)",
+    "story": "Ordonné prêtre en 1835, Antoine-Marie fonde en juillet 1849 les Fils du Cœur Immaculé de Marie. Archevêque de Santiago de Cuba, il est rappelé à Madrid en 1857 comme confesseur d’Isabelle II. Exilé en France en 1868, il est canonisé par Pie XII le 7 mai 1950.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Antoine-Marie_Claret" }
+    ]
+  },
+  "simon_and_jude_apostles": {
+    "role": "Apôtres",
+    "era": "Iᵉʳ siècle",
+    "died": "Vers 62-65 selon la tradition",
+    "patron": "Scieurs de long, mariage (Simon) ; causes difficiles (Jude)",
+    "story": "Simon est appelé le Cananéen ou le Zélote, et Jude, fils de Jacques, porte aussi le nom de Thaddée. Tous deux figurent parmi les Douze. L’Église les fête ensemble le 28 octobre.",
+    "caution": "Les lieux de leur mort varient selon les traditions. L’auteur de la lettre de Jude est débattu : Benoît XVI l’attribue à Jude Thaddée, d’autres à Jude, frère de Jésus.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 11 octobre 2006", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20061011.html" },
+      { "label": "Wikipédia (Simon)", "url": "https://fr.wikipedia.org/wiki/Simon_le_Zélote" },
+      { "label": "Wikipédia (Jude)", "url": "https://fr.wikipedia.org/wiki/Jude_(apôtre)" }
+    ]
   }
 }
