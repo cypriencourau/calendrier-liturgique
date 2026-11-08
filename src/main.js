@@ -33,6 +33,9 @@ const state = {
   days: [],
 };
 const yearCache = new Map();
+// Fiches des saints : chargées à part pour ne pas alourdir le premier affichage.
+const saintsReady = import('../lib/saints.json').then((m) => m.default).catch(() => ({}));
+let SAINTS = {};
 
 // ── Utilitaires ─────────────────────────────
 function readStorage(key) {
@@ -185,7 +188,27 @@ function renderHero(day, today, hero = $('hero')) {
       <span><span class="hero-label">Couleur liturgique</span><strong>${escapeHtml(colorLabel(main.colors))}</strong></span>
     </div>
     ${othersHtml}
-    ${vespersHtml(day, today)}`;
+    ${vespersHtml(day, today)}
+    ${saintsHtml(day)}`;
+}
+
+// Fiches des saints du jour : la première ouverte, les autres repliées.
+function saintsHtml(day) {
+  const withFiche = day.celebrations.filter((c) => SAINTS[c.id]);
+  if (!withFiche.length) return '';
+  return `<div class="saints">${withFiche.map((c, i) => saintHtml(c, day, SAINTS[c.id], i === 0)).join('')}</div>`;
+}
+
+function saintHtml(c, day, s, open) {
+  const facts = [['Naissance', s.born], ['Mort', s.died], ['Patron de', s.patron]].filter(([, value]) => value);
+  const sources = s.sources.map((src) => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.label)}</a>`).join(' · ');
+  return `<details class="saint"${open ? ' open' : ''}>
+      <summary><span class="hero-label">${escapeHtml(s.era)}</span><strong>${escapeHtml(listName(c, day))}</strong><span class="saint-role">${escapeHtml(s.role)}</span></summary>
+      <dl class="saint-facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${escapeHtml(v)}</dd></div>`).join('')}</dl>
+      <p class="saint-story">${escapeHtml(s.story)}</p>
+      ${s.caution ? `<p class="saint-caution"><strong>Histoire et tradition.</strong> ${escapeHtml(s.caution)}</p>` : ''}
+      <p class="saint-sources">Sources : ${sources}</p>
+    </details>`;
 }
 
 // « Ce soir : 1res Vêpres de… » — l'oubli classique la veille des dimanches et solennités.
@@ -275,6 +298,7 @@ async function render(direction = 0) {
 
   try {
     const days = await loadWeek(state.calendar, state.weekStart);
+    SAINTS = await saintsReady;
     if (token !== renderToken) return;
     if (days.some((d) => !d)) throw new Error('semaine hors des années disponibles');
     state.days = days;

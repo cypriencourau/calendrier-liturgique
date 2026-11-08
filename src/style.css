@@ -779,6 +779,25 @@ svg { display: block; }
 [data-style='missel'] .hero-vespers .hero-label { color: var(--rubric); opacity: 1; }
 [data-style='missel'] .vespers-icon { background: none; color: var(--rubric); }
 
+/* Fiches des saints */
+.saints { position: relative; margin-top: 16px; }
+.saint { padding-block: 14px; border-top: 1px solid var(--line); }
+.saint summary { display: grid; gap: 1px; padding-right: 26px; position: relative; cursor: pointer; list-style: none; }
+.saint summary::-webkit-details-marker { display: none; }
+.saint summary::after { content: '+'; position: absolute; top: 50%; right: 2px; transform: translateY(-50%); font-size: 1.25rem; line-height: 1; color: var(--muted); }
+.saint[open] summary::after { content: '–'; }
+.saint summary strong { font-size: 1.02rem; font-weight: 650; line-height: 1.3; }
+.saint-role { font-size: 0.83rem; color: var(--muted); }
+.saint-facts { display: grid; gap: 7px; margin-top: 13px; }
+.saint-facts div { display: grid; grid-template-columns: 76px 1fr; gap: 10px; font-size: 0.86rem; line-height: 1.4; }
+.saint-facts dt { color: var(--muted); }
+.saint-story { margin-top: 13px; font-size: 0.95rem; line-height: 1.58; }
+.saint-caution { margin-top: 11px; font-size: 0.85rem; line-height: 1.5; color: var(--muted); }
+.saint-caution strong { font-weight: 650; color: var(--ink); }
+.saint-sources { margin-top: 11px; font-size: 0.75rem; line-height: 1.5; color: var(--muted); }
+.saint-sources a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.saint :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
 .row-vespers { display: inline-flex; align-items: center; gap: 4px; margin-top: 2px; font-size: 0.75rem; font-weight: 650; color: var(--ink); }
 .row-vespers svg { width: 13px; height: 13px; }
 
