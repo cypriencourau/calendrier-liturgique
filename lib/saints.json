@@ -354,5 +354,199 @@
     "sources": [
       { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Sylvestre_Ier" }
     ]
+  },
+  "basil_the_great_and_gregory_nazianzen_bishops": {
+    "role": "Évêques et docteurs de l’Église",
+    "era": "IVᵉ siècle",
+    "born": "Vers 329-330 : à Césarée de Cappadoce (Basile), à Nazianze (Grégoire)",
+    "died": "379 à Césarée (Basile) ; 390 (Grégoire)",
+    "patron": "Moines basiliens (Basile)",
+    "story": "Amis depuis leurs études à Athènes, Basile et Grégoire deviennent deux grandes figures de la Cappadoce. Issu d’une famille de saints, Basile se retire en 358 au bord de l’Iris, près de la communauté de sa mère et de sa sœur, fonde des communautés monastiques et devient évêque de Césarée en 370. Grégoire, fils de l’évêque de Nazianze, préside en 381 le concile de Constantinople, puis renonce à sa charge d’évêque de cette ville et finit sa vie retiré. Pie V les proclame tous deux docteurs de l’Église en 1568.",
+    "caution": "Le 1ᵉʳ janvier 379, souvent donné pour la mort de Basile, est une date traditionnelle.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 4 juillet 2007 (Basile)", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070704.html" },
+      { "label": "Benoît XVI, audience du 8 août 2007 (Grégoire)", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20070808.html" },
+      { "label": "Wikipédia (Basile)", "url": "https://fr.wikipedia.org/wiki/Basile_de_Césarée" },
+      { "label": "Wikipédia (Grégoire)", "url": "https://fr.wikipedia.org/wiki/Grégoire_de_Nazianze" }
+    ]
+  },
+  "genevieve_of_paris_virgin": {
+    "role": "Vierge consacrée",
+    "era": "Vᵉ-VIᵉ siècle",
+    "born": "Vers 420, à Nanterre",
+    "died": "Entre 502 et 512, à Paris",
+    "patron": "Paris, diocèse de Nanterre, gendarmerie nationale",
+    "story": "Fille unique d’une famille aisée gallo-romaine, Geneviève perd ses parents vers 440 et s’installe chez sa marraine, dans l’île de la Cité. Elle vit comme vierge consacrée. La tradition lui donne un rôle lors de la menace d’Attila sur Paris, en 451. Pendant le siège de Childéric, en 465, elle ravitaille la ville. Elle est très tôt vénérée comme sainte.",
+    "caution": "Sa Vie, rédigée dix-huit ans après sa mort, est pleine de merveilleux et sans chronologie. Elle n’a jamais rencontré Attila, et le titre de « premier maire de Paris » est rejeté.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Geneviève_de_Paris" }
+    ]
+  },
+  "raymond_of_penyafort_priest": {
+    "role": "Prêtre dominicain, juriste",
+    "era": "XIIIᵉ siècle",
+    "born": "Vers 1175-1180, au château de Penyafort, près de Barcelone",
+    "died": "6 ou 7 janvier 1275, à Barcelone",
+    "story": "Professeur de droit canonique, notamment à Bologne de 1210 à 1222, Raymond est appelé à Rome par Grégoire IX en 1230. Son travail aboutit aux Décrétales, promulguées le 5 septembre 1234. Maître de l’ordre dominicain de 1238 à 1240, il rédige en 1242 un directoire pour l’Inquisition, s’intéresse à la formation en langue arabe avec l’école de Tunis, en 1245, et prend part à la disputation de Barcelone en 1263. Clément VIII le canonise en 1601.",
+    "caution": "La cape étendue sur l’eau pour traverser la mer est une anecdote sans source.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Raymond_de_Peñafort" }
+    ]
+  },
+  "hilary_of_poitiers_bishop": {
+    "role": "Évêque de Poitiers, docteur de l’Église",
+    "era": "IVᵉ siècle",
+    "born": "Vers 300-310, à Poitiers",
+    "died": "367, à Poitiers",
+    "patron": "Diocèse de Poitiers, Parme",
+    "story": "Issu de l’aristocratie gallo-romaine et né païen, Hilaire est baptisé vers 345 et devient évêque de Poitiers dans les années 350. Dans la crise arienne, il est exilé en Phrygie à l’été 356, après le synode de Béziers. Il revient à Poitiers vers 360-361 et prend part au concile de Paris. C’est près de chez lui que Martin fonde Ligugé, en 360. Pie IX le proclame docteur de l’Église en 1851.",
+    "caution": "Sa date de naissance est incertaine. Son mariage et sa fille Abra sont rapportés par Venance Fortunat.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 10 octobre 2007", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2007/documents/hf_ben-xvi_aud_20071010.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Hilaire_de_Poitiers" }
+    ]
+  },
+  "remigius_of_reims_bishop": {
+    "role": "Évêque de Reims",
+    "era": "Vᵉ-VIᵉ siècle",
+    "born": "Vers 437 selon la tradition, à Cerny-en-Laonnois",
+    "died": "13 janvier 533, à Reims",
+    "patron": "Archidiocèse de Reims",
+    "story": "Selon la tradition, Remi est le fils du comte de Laon et de sainte Céline. Il est élu évêque de Reims vers 22 ans, sans être encore entré dans les ordres. Il baptise Clovis un jour de Noël, entre 496 et 506, et reste à la tête de son diocèse pendant plus de soixante-dix ans. En 852, l’archevêque Hincmar fait élever ses reliques, ce qui vaut alors canonisation.",
+    "caution": "Une grande part de son histoire vient de la Vie écrite par Hincmar, au IXᵉ siècle. La Sainte Ampoule apportée par une colombe relève de la tradition, et son testament est en partie apocryphe.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Remi_de_Reims" }
+    ]
+  },
+  "anthony_of_egypt_abbot": {
+    "role": "Moine et ermite",
+    "era": "IIIᵉ-IVᵉ siècle",
+    "born": "Vers 251, à Hérakléopolis (Égypte)",
+    "died": "17 janvier 356, à Côme (Égypte)",
+    "patron": "Vanniers, fabricants de brosses ; invoqué contre les maladies de peau",
+    "story": "À vingt ans, Antoine confie sa sœur à une communauté et donne ses biens. En 285, il s’installe au désert, à Pispir, puis, en 312, plus loin en Thébaïde, au mont Qolzum. On vient le consulter, comme Hilarion de Gaza en 307. Vers 360, Athanase écrit sa Vie, qui fait de lui la figure du père du monachisme chrétien. Ses reliques arrivent en France en 1070, et l’ordre des Antonins naît vers 1095.",
+    "caution": "Les 105 ans qu’on lui prête viennent de ces récits anciens. Le cochon et la clochette de son iconographie sont une tradition liée aux Antonins.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Antoine_le_Grand" }
+    ]
+  },
+  "fabian_i_pope": {
+    "role": "Pape et martyr",
+    "era": "IIIᵉ siècle",
+    "born": "Vers 178, à Rome",
+    "died": "20 janvier 250, à Rome",
+    "story": "Fabien est élu pape le 10 janvier 236, alors qu’il est encore laïc selon la tradition. Son pontificat dure quatorze ans. Fin 249, l’empereur Dèce impose à tous un sacrifice, attesté par un certificat, et Fabien meurt en 250, peut-être exécuté, plus probablement laissé sans nourriture en prison. Il est enterré à Saint-Calixte, où son épitaphe est retrouvée en 1850.",
+    "caution": "La colombe posée sur sa tête lors de son élection appartient à la tradition, comme l’envoi d’évêques missionnaires en Gaule, dont Denis à Lutèce.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Fabien_(pape)" }
+    ]
+  },
+  "sebastian_of_milan_martyr": {
+    "role": "Martyr",
+    "era": "IIIᵉ siècle selon la tradition",
+    "born": "Vers 256 selon la tradition, à Narbonne",
+    "died": "Vers 288 selon la tradition, à Rome",
+    "patron": "Archers, fantassins, policiers, Garde suisse ; invoqué contre la peste",
+    "story": "Ambroise de Milan est le premier à le mentionner, à la fin du IVᵉ siècle. Selon la tradition reprise par La Légende dorée, Sébastien est un militaire né en Gaule, percé de flèches sous Dioclétien, puis achevé à coups de verges. Il devient le troisième patron de Rome, après Pierre et Paul, et l’un des grands protecteurs invoqués contre la peste.",
+    "caution": "On ne sait presque rien de sûr à son sujet : les récits varient même sur la date de son martyre, et ses miracles viennent de la tradition hagiographique.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Sébastien_(martyr)" }
+    ]
+  },
+  "agnes_of_rome_virgin": {
+    "role": "Vierge et martyre",
+    "era": "Début du IVᵉ siècle",
+    "born": "Vers 291, lieu inconnu",
+    "died": "304 ou 305, à Rome selon la tradition",
+    "patron": "Jeunes filles, fiancés, jardiniers",
+    "story": "Agnès meurt vers treize ans, pendant la persécution de Dioclétien. Son culte est attesté dès 354 dans la Depositio martyrum, l’un des plus anciens calendriers de l’Église de Rome. Depuis le XVᵉ siècle, on y bénit des agneaux le jour de sa fête, le 21 janvier.",
+    "caution": "Son histoire repose sur un mince canevas historique, enrichi par des traditions orales et par Prudence. Les cheveux qui poussent, l’ange, le bûcher qui l’épargne relèvent de la légende, et sa noble origine n’est pas prouvée.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Agnès_de_Rome" }
+    ]
+  },
+  "vincent_of_saragossa_deacon": {
+    "role": "Diacre et martyr",
+    "era": "Début du IVᵉ siècle",
+    "born": "Seconde moitié du IIIᵉ siècle, à Saragosse ou à Huesca",
+    "died": "304, à Valence (Espagne)",
+    "patron": "Vignerons, Valence, Lisbonne",
+    "story": "Diacre au service de l’évêque Valère de Saragosse, Vincent meurt martyr à Valence en 304, pendant la persécution de Dioclétien. Son culte se diffuse largement : dès le début du Vᵉ siècle, Augustin lui consacre des sermons et Prudence un poème.",
+    "caution": "Le corbeau qui garde son corps, la meule et le geôlier converti sont des motifs hagiographiques. Le patronage des vignerons est une tradition populaire postérieure au XVIᵉ siècle.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Vincent_de_Saragosse" }
+    ]
+  },
+  "francis_de_sales_bishop": {
+    "role": "Évêque de Genève, docteur de l’Église",
+    "era": "XVIᵉ-XVIIᵉ siècle",
+    "born": "21 août 1567, au château de Sales (Savoie)",
+    "died": "28 décembre 1622, à Lyon",
+    "patron": "Journalistes et écrivains",
+    "story": "Aîné de six enfants d’une famille noble de Savoie, François étudie à Paris à partir de 1584 et traverse fin 1586 une grave crise spirituelle sur la prédestination. Il poursuit ses études à Padoue, puis est ordonné prêtre le 18 décembre 1593. Évêque de Genève en 1602, il réside à Annecy. Il publie l’Introduction à la vie dévote et cofonde la Visitation en 1610. Alexandre VII le canonise en 1665, et il est proclamé docteur de l’Église en 1877.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 2 mars 2011", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2011/documents/hf_ben-xvi_aud_20110302.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/François_de_Sales" }
+    ]
+  },
+  "conversion_of_saint_paul_the_apostle": {
+    "role": "Apôtre des nations",
+    "era": "Iᵉʳ siècle",
+    "born": "Début du Iᵉʳ siècle, probablement à Tarse (Cilicie)",
+    "died": "Entre 64 et 68, à Rome",
+    "story": "Juif de la tribu de Benjamin, citoyen romain et formé par Gamaliel selon les Actes, Paul persécute d’abord les disciples de Jésus. Au début des années 30, sur le chemin de Damas, il rencontre le Christ ressuscité. Cet événement, que l’Église fête aujourd’hui, fait de lui un apôtre. Baptisé, il se rend en Arabie, puis devient missionnaire itinérant. Il prend part au concile de Jérusalem vers l’an 50.",
+    "caution": "Benoît XVI invite à y voir moins une conversion au sens psychologique qu’une rencontre avec le Ressuscité et un appel à l’apostolat.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 3 septembre 2008", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2008/documents/hf_ben-xvi_aud_20080903.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Paul_de_Tarse" }
+    ]
+  },
+  "timothy_of_ephesus_and_titus_of_crete_bishops": {
+    "role": "Disciples de saint Paul, évêques",
+    "era": "Iᵉʳ siècle",
+    "born": "Début du Iᵉʳ siècle : à Lystre (Timothée), en Grèce (Tite)",
+    "died": "Fin du Iᵉʳ siècle selon la tradition : à Éphèse (Timothée), à Gortyne en Crète (Tite)",
+    "story": "Fils d’un père grec et d’une mère juive, Eunice, Timothée accompagne Paul en Macédoine, à Corinthe et à Éphèse. Eusèbe le présente comme le premier évêque d’Éphèse. Tite, Grec de naissance, est aux côtés de Paul au concile de Jérusalem, vers 50. Selon la lettre qui porte son nom, Paul lui confie l’Église de Crète, où il est vénéré comme premier évêque.",
+    "caution": "On ne sait rien de sûr de leur mort : le martyre de Timothée à Éphèse est traditionnel. Les lettres à Timothée et à Tite sont attribuées à Paul.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 13 décembre 2006", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2006/documents/hf_ben-xvi_aud_20061213.html" },
+      { "label": "Wikipédia (Timothée)", "url": "https://fr.wikipedia.org/wiki/Timothée_(Nouveau_Testament)" },
+      { "label": "Wikipédia (Tite)", "url": "https://fr.wikipedia.org/wiki/Tite_(saint)" }
+    ]
+  },
+  "angela_merici_virgin": {
+    "role": "Tertiaire franciscaine, fondatrice",
+    "era": "XVᵉ-XVIᵉ siècle",
+    "born": "Entre 1470 et 1475, à Desenzano del Garda (Italie)",
+    "died": "27 janvier 1540, à Brescia",
+    "story": "Issue de la petite noblesse, Angèle perd ses parents vers 15 ou 16 ans et rejoint son oncle à Salò. À 18 ans, elle entre dans le Tiers-Ordre franciscain. À partir de 1516, elle vit à Brescia. Elle se rend à Jérusalem en 1524, puis rencontre Clément VII à Rome en 1525. Le 25 novembre 1535, elle fonde la Compagnie de Sainte-Ursule avec 28 jeunes filles, sans vœux ni cloître. Pie VII la canonise le 27 mai 1807.",
+    "caution": "Le récit hagiographique de sa vie rend difficile la part de l’histoire et de la légende. La vision de l’échelle vient de ses propres dires.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Angèle_Merici" }
+    ]
+  },
+  "thomas_aquinas_priest": {
+    "role": "Dominicain, docteur de l’Église",
+    "era": "XIIIᵉ siècle",
+    "born": "Vers 1224-1226, à Roccasecca (Italie)",
+    "died": "7 mars 1274, à l’abbaye de Fossanova",
+    "story": "Issu d’une famille noble et riche, Thomas étudie à Naples, puis gagne Paris en 1245. Dominicain, auteur de la Somme théologique, il enseigne ensuite à Orvieto, à Rome, de nouveau à Paris à partir de 1269, puis à Naples. En décembre 1273, après une expérience vécue pendant la messe, il cesse d’écrire. Il meurt à Fossanova alors qu’il est en route pour le concile de Lyon. On l’appelle Docteur commun et Docteur angélique. Il repose à Toulouse depuis 1369.",
+    "caution": "Certaines sources proposent aussi Belcastro comme lieu de naissance. Son dialogue avec le Crucifix à Naples est rapporté par ses anciens biographes.",
+    "sources": [
+      { "label": "Benoît XVI, audience du 2 juin 2010", "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2010/documents/hf_ben-xvi_aud_20100602.html" },
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Thomas_d'Aquin" }
+    ]
+  },
+  "john_bosco_priest": {
+    "role": "Prêtre, éducateur, fondateur des Salésiens",
+    "era": "XIXᵉ siècle",
+    "born": "16 août 1815, aux Becchi (Piémont)",
+    "died": "31 janvier 1888, à Turin",
+    "patron": "Éducateurs, apprentis, éditeurs, prestidigitateurs",
+    "story": "Fils de paysans pauvres, Jean perd son père à deux ans. Ordonné prêtre en juin 1841, il rencontre le 8 décembre de la même année le jeune Bartolomeo Garelli : c’est le point de départ de son œuvre. Suivent les cours du soir en 1844 et un foyer d’apprentis en 1847. Il fonde la Société de Saint-François-de-Sales, approuvée par Pie IX en 1869, et, en 1872, les Filles de Marie-Auxiliatrice avec Maria Domenica Mazzarello. Pie XI le canonise le 1ᵉʳ avril 1934.",
+    "caution": "Beaucoup d’anecdotes, comme le chien Grigio, viennent de ses Mémoires. Les sources divergent sur la date de fondation des Salésiens : 1854 ou 1859.",
+    "sources": [
+      { "label": "Wikipédia", "url": "https://fr.wikipedia.org/wiki/Jean_Bosco" }
+    ]
   }
 }
